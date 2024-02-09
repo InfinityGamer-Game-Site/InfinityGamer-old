@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap');
+:root {
+  --bg-color: #000000;
+  --text-color: #FFFFFF;
+  --link-color: #6FC1F7;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+a{
+  color: var(--link-color);
+  text-underline-offset: 3px;
+  transition: 0.25s ease-in-out;
+}
+a:hover{
+  text-underline-offset: 1px;
+}
+games-wrapper {
+  width: 100%
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+game-box{
+  background-image: attr(data-image);
+  width: 50px;
+  height: 50px;
+}
