@@ -16,6 +16,12 @@
   background-size: cover;
   width: 100px;
   height: 100px;
-  background-color: gray;
-  margin: 10px;
+  margin: 10px; /* Adjust the margin as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align items to the bottom */
+}
+
+.game-box span {
+  margin-bottom: 5px; /* Optional: Add some spacing between the text and the bottom */
 }
