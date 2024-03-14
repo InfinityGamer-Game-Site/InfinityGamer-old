@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const gameBox = document.createElement("div");
       gameBox.classList.add("game-box");
       gameBox.style.backgroundImage = `url('${gameImg}')`;
+      gameBox.textContent = gameName; // Add game name as text content
       gameBox.addEventListener("click", function() {
         window.location.href = gameLink;
       });
