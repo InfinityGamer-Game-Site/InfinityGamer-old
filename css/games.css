@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap');
 :root {
   --bg-color: #000000;
   --text-color: #FFFFFF;
   --link-color: #6FC1F7;
 }
-games-wrapper {
+
+#games-wrapper {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 50px;
 }
-game-box {
-  background-image: var(--game-img);
+
+.game-box {
   background-size: cover;
   width: 100px;
   height: 100px;
