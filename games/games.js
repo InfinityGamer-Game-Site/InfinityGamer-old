@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const gamesWrapper = document.getElementById("games-wrapper");
-    const gameNames = ["1", "1v1lol", "1v1space", "8ball-billiards-classic", "10-minutes-till-dawn", "100ng", "2020-game"];
+    const gameNames = ["1", "1v1lol", "1v1space", "8ball-billiards-classic", "10-minutes-till-dawn", "100ng", "2020-game", "2048", "2048-multitask", "9007199254740992"];
 
     function toTitleCase(str) {
         return str.replace(/\b\w+/g, function(txt) {
