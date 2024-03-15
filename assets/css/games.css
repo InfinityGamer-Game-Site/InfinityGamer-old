@@ -17,6 +17,7 @@
   border: 1px solid white;
   overflow: hidden; /* Hides any content that overflows its container */
   text-overflow: ellipsis;
+  border-radius: 5px;
 }
 
 .game-box span {
