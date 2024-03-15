@@ -23,7 +23,7 @@ button{
   text-align: center;
   border: 1px solid white;
   background-color: var(--transparent);
-  color: var(--text-color)
+  color: var(--text-color);
   border-radius: 20%;
   width: 100px;
   height: 100px;

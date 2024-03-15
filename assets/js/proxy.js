@@ -3,7 +3,7 @@ var currentIndex = 0;
 var iframe = document.getElementById('website-iframe');
 var rowDisplay = document.getElementById('row-display');
 
-fetch('proxies.txt')
+fetch('../../proxy/proxies.txt')
 .then(response => response.text())
 .then(data => {
     websites = data.trim().split('\n');
