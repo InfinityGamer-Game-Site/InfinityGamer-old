@@ -28,4 +28,4 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-//Thanks ChatGPT!
+//Created by ChatGPT
