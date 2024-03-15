@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const gamesWrapper = document.getElementById("games-wrapper");
-    const gameNames = ["1", "1v1lol", "1v1space", "8ball-billiards-classic", "10-minutes-till-dawn", "100ng", "2020-game", "2048", "2048-multitask", "9007199254740992", "a-dark-room", "achievement-unlocked", "adrenaline-challenge"];
+    const gameNames = ["1", "1v1lol", "8ball-billiards-classic", "10-minutes-till-dawn", "100ng", "2020-game", "2048", "2048-multitask", "9007199254740992", "a-dark-room", "achievement-unlocked", "adrenaline-challenge", "age-of-war", "alien-hominid", "alien-invaders-io", "align-4", "among-us", "angry-birds", "anti-terrorist-rush", "arcade-wizard", "ascii-space", "aspiring-artist", "asteroids"];
 
     function toTitleCase(str) {
         return str.replace(/\b\w+/g, function(txt) {
