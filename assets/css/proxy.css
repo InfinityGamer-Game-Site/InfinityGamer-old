@@ -5,8 +5,8 @@ body {
 }
 
 #navbar {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     padding: 10px;
     text-align: center;
 }
@@ -26,12 +26,14 @@ iframe {
 .nav-button {
     cursor: pointer;
     padding: 1px 10px 10px;
-    background-color: #00000000;
-    color: #fff;
+    background-color: var(--transparent);
+    color: var(--text-color);
     border: none;
     border-radius: 5px;
     margin: 0 5px;
     font-size: large;
+    width: 25px;
+    height: 25px;
 }
 
 #left-button {
