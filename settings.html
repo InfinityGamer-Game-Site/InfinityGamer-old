@@ -15,19 +15,17 @@
 
     <title>InfinityGamer</title>
     <link rel="stylesheet" type="text/css" href="assets/css/global.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
   </head>
   <body>
-    <h1>InfinityGamer</h1>
-    <div class="container">
-      <p id="random-text">Loading...</p>
-    </div>
+    <h1>Settings</h1>
 
-  
-    <button onclick="location.href='/games/index.html'">Games</button>
-    <button onclick="location.href='/proxy/index.html'">Proxy</button>
+    <div>
+    <button onclick="toggleTheme('dark')">Dark</button>
+    <button onclick="toggleTheme('light')">Light</button>
+    <button onclick="toggleTheme('oceanic')">Oceanic</button>
+    <button onclick="toggleTheme('midnight')">Midnight</button>
+  </div>
 
-    <script src="assets/js/random-text.js"></script>
     <script src="assets/js/global-theme.js"></script>
   </body>
 </html>

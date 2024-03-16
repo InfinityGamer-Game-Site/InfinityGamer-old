@@ -1,33 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap");
 :root {
-  --bg-color: #000000;
-  --text-color: #FFFFFF;
-  --link-color: #6FC1F7;
-  --transparent: #00000000;
+  --transition-duration: 0.5s;
+  --bg-color-light: #fff;
+  --text-color-light: #000000;
+  --link-color-light: #007bff;
+  --bg-color-dark: #000000;
+  --text-color-dark: #fff;
+  --link-color-dark: #007bff;
+  --bg-color-oceanic: #015ab9;
+  --text-color-oceanic: #fff;
+  --link-color-oceanic: #ff00ea;
+  --bg-color-midnight: #3e0147;
+  --text-color-midnight: #fff;
+  --link-color-midnight: #4b0b8a;
+}
+.dark {
+  --bg-color: var(--bg-color-dark);
+  --text-color: var(--text-color-dark);
+  --link-color: var(--link-color-dark);
+}
+
+.light {
+  --bg-color: var(--bg-color-light);
+  --text-color: var(--text-color-light);
+  --link-color: var(--link-color-light);
+}
+
+.oceanic {
+  --bg-color: var(--bg-color-oceanic);
+  --text-color: var(--text-color-oceanic);
+  --link-color: var(--link-color-oceanic);
+}
+
+.midnight {
+  --bg-color: var(--bg-color-midnight);
+  --text-color: var(--text-color-midnight);
+  --link-color: var(--link-color-midnight);
 }
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   text-align: center;
+  transition: background-color var(--transition-duration) ease, color var(--transition-duration) ease;
 }
-a{
+a {
   color: var(--link-color);
   text-underline-offset: 3px;
   transition: 0.25s ease-in-out;
 }
-a:hover{
+a:hover {
   text-underline-offset: 1px;
 }
-button{
+button {
   text-align: center;
-  border: 1px solid white;
+  border: 1px solid var(--text-color);
   background-color: var(--transparent);
   color: var(--text-color);
   border-radius: 20%;
   width: 100px;
   height: 100px;
   border-radius: 5px;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
-
