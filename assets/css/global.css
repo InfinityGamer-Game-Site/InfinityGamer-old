@@ -14,6 +14,9 @@
   --bg-color-midnight: #3e0147;
   --text-color-midnight: #fff;
   --link-color-midnight: #4b0b8a;
+  --bg-color-bubblegum: #ff67b3;
+  --text-color-bubblegum: #1c000b;
+  --link-color-bubblegum: #8b1abc;
 }
 .dark {
   --bg-color: var(--bg-color-dark);
@@ -38,6 +41,13 @@
   --text-color: var(--text-color-midnight);
   --link-color: var(--link-color-midnight);
 }
+
+.bubblegum {
+  --bg-color: var(--bg-color-bubblegum);
+  --text-color: var(--text-color-bubblegum);
+  --link-color: var(--link-color-bubblegum);
+}
+
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
