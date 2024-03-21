@@ -1,52 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap");
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-:root {
-  --transition-duration: 0.5s;
-  --bg-color-light: #fff;
-  --text-color-light: #000000;
-  --link-color-light: #007bff;
-  --bg-color-dark: #000000;
-  --text-color-dark: #fff;
-  --link-color-dark: #007bff;
-  --bg-color-oceanic: #015ab9;
-  --text-color-oceanic: #fff;
-  --link-color-oceanic: #ff00ea;
-  --bg-color-midnight: #3e0147;
-  --text-color-midnight: #fff;
-  --link-color-midnight: #4b0b8a;
-  --bg-color-bubblegum: #ff67b3;
-  --text-color-bubblegum: #1c000b;
-  --link-color-bubblegum: #8b1abc;
-}
-.dark {
-  --bg-color: var(--bg-color-dark);
-  --text-color: var(--text-color-dark);
-  --link-color: var(--link-color-dark);
-}
+@import url('themes.css');
 
-.light {
-  --bg-color: var(--bg-color-light);
-  --text-color: var(--text-color-light);
-  --link-color: var(--link-color-light);
-}
-
-.oceanic {
-  --bg-color: var(--bg-color-oceanic);
-  --text-color: var(--text-color-oceanic);
-  --link-color: var(--link-color-oceanic);
-}
-
-.midnight {
-  --bg-color: var(--bg-color-midnight);
-  --text-color: var(--text-color-midnight);
-  --link-color: var(--link-color-midnight);
-}
-
-.bubblegum {
-  --bg-color: var(--bg-color-bubblegum);
-  --text-color: var(--text-color-bubblegum);
-  --link-color: var(--link-color-bubblegum);
-}
 
 body {
   background-color: var(--bg-color);
