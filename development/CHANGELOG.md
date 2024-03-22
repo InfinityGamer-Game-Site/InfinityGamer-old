@@ -25,3 +25,10 @@
 - Fixed 404.html's CSS and JS referencing not working on subpages
 - Changed layout of CHANGELOG.md to make more sense and to be easier to read
 - Made theme buttons look like their themes
+
+## v1.3 - Categories - 3/22/24
+
+- Renamed minecraft games fom starting with mc to start with minecraft
+- Moved infinity logos to assets/images/infinity
+- Added categories of games
+- Renamed games/game.html or games/display.html, renamed ?game query to ?g

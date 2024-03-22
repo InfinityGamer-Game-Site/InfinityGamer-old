@@ -35,3 +35,7 @@ button {
   font-family: 'Material Icons', sans-serif;
   font-size: 150%;
 }
+
+table, td, tr {
+  outline: 1px solid var(--text-color)
+}

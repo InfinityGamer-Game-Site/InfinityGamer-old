@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const urlParams = new URLSearchParams(window.location.search);
+  const categoryParam = urlParams.get("c");
+
   const gamesWrapper = document.getElementById("games-wrapper");
   const gameNames = [
     "1",
@@ -211,9 +214,9 @@ document.addEventListener("DOMContentLoaded", function () {
     "mario",
     "marvin-spectrum",
     "matrix-rampage",
-    "mc1.5.2",
-    "mcbeta0.30",
-    "mcbeta1.3",
+    "minecraft-1.5.2",
+    "minecraft-beta-0.30",
+    "minecraft-beta-1.3",
     "meat-boy",
     "meme-2048",
     "minesweeper",
@@ -392,43 +395,113 @@ document.addEventListener("DOMContentLoaded", function () {
     "zombs-royale",
   ];
 
+  const categories = {
+    papas: [
+      "papas-pizzaria",
+      "papas-freezeria",
+      "papas-hot-doggeria",
+      "papas-pancakeria",
+      "papas-sushiria",
+      "papas-wingeria"
+    ],
+    minecraft: [
+      "minecraft-1.3",
+      "minecraft-1.5.2",
+      "minecraft-beta-0.30"
+    ],
+    twentyfortyeight: [
+      "1",
+      "9007199254740992",
+      "2048-multitask",
+      "2048",
+      "cupcake-2048",
+      "doge-2048",
+      "flappy-2048",
+      "meme-2048"
+    ],
+    mario: [
+      "fullscreen-mario",
+      "mario",
+      "super-mario-63",
+      "super-mario-64",
+      "super-mario-maker-online"
+    ]
+  }
+
   function toTitleCase(str) {
     return str.replace(/\b\w+/g, function (txt) {
       return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
     });
   }
+  if (categoryParam) {
+    categories[categoryParam].forEach(function (gameName) {
+      const gameImg = `../images/games/${gameName}.png`;
+      const gameLink = `display.html?g=${gameName}`;
 
-  gameNames.forEach(function (gameName) {
-    const gameImg = `../images/games/${gameName}.png`;
-    const gameLink = `game.html?game=${gameName}`;
+      const gameBox = document.createElement("div");
+      gameBox.classList.add("game-box");
+      gameBox.style.backgroundImage = `url('${gameImg}')`;
 
-    const gameBox = document.createElement("div");
-    gameBox.classList.add("game-box");
-    gameBox.style.backgroundImage = `url('${gameImg}')`;
+      const gameText = document.createElement("span");
+      gameText.textContent = toTitleCase(gameName.replace(/-/g, " ")); // Convert to title case and replace dashes with spaces
+      gameBox.appendChild(gameText);
 
-    const gameText = document.createElement("span");
-    gameText.textContent = toTitleCase(gameName.replace(/-/g, " ")); // Convert to title case and replace dashes with spaces
-    gameBox.appendChild(gameText);
-
-    gameBox.addEventListener("click", function () {
-      window.location.href = gameLink;
-    });
-
-    gamesWrapper.appendChild(gameBox);
-
-    document.getElementById("searchInput").addEventListener("input", function() {
-      const filterValue = this.value.toLowerCase();
-    
-      document.querySelectorAll('.game-box').forEach(function(gameBox) {
-        const gameText = gameBox.textContent.toLowerCase();
-        if (gameText.includes(filterValue)) {
-          gameBox.style.display = 'block';
-        } else {
-          gameBox.style.display = 'none';
-        }
+      gameBox.addEventListener("click", function () {
+        window.location.href = gameLink;
       });
+
+      gamesWrapper.appendChild(gameBox);
+
+      document
+        .getElementById("searchInput")
+        .addEventListener("input", function () {
+          const filterValue = this.value.toLowerCase();
+
+          document.querySelectorAll(".game-box").forEach(function (gameBox) {
+            const gameText = gameBox.textContent.toLowerCase();
+            if (gameText.includes(filterValue)) {
+              gameBox.style.display = "block";
+            } else {
+              gameBox.style.display = "none";
+            }
+          });
+        });
     });
-  });
+  } else {
+    gameNames.forEach(function (gameName) {
+      const gameImg = `../images/games/${gameName}.png`;
+      const gameLink = `display.html?g=${gameName}`;
+
+      const gameBox = document.createElement("div");
+      gameBox.classList.add("game-box");
+      gameBox.style.backgroundImage = `url('${gameImg}')`;
+
+      const gameText = document.createElement("span");
+      gameText.textContent = toTitleCase(gameName.replace(/-/g, " ")); // Convert to title case and replace dashes with spaces
+      gameBox.appendChild(gameText);
+
+      gameBox.addEventListener("click", function () {
+        window.location.href = gameLink;
+      });
+
+      gamesWrapper.appendChild(gameBox);
+
+      document
+        .getElementById("searchInput")
+        .addEventListener("input", function () {
+          const filterValue = this.value.toLowerCase();
+
+          document.querySelectorAll(".game-box").forEach(function (gameBox) {
+            const gameText = gameBox.textContent.toLowerCase();
+            if (gameText.includes(filterValue)) {
+              gameBox.style.display = "block";
+            } else {
+              gameBox.style.display = "none";
+            }
+          });
+        });
+    });
+  }
 });
 
 //Created by ChatGPT

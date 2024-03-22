@@ -1,6 +1,6 @@
 // JavaScript code to extract the search parameter from the URL and set the iframe source
 const urlParams = new URLSearchParams(window.location.search);
-const searchParam = urlParams.get("game");
+const searchParam = urlParams.get("g");
 
 if (searchParam) {
   let title = toTitleCase(searchParam.replace(/-/g, " "));

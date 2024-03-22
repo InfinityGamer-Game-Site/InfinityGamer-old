@@ -1,7 +1,7 @@
 # InfinityGamer
 
 Infinite fun, unblocked!
-A new game site with 415 games, an unblocked proxy viewer, and much more!
+A new game site with 388 games, an unblocked proxy viewer, and much more!
 
 ## Deployment
 
