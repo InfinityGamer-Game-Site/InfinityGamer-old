@@ -19,3 +19,11 @@ if (savedTheme) {
   // Default to dark theme if no theme is saved
   toggleTheme("dark");
 }
+
+window.addEventListener('load', function() {
+  // Add event listener to detect when user tries to leave the page
+  window.addEventListener('beforeunload', function(e) {
+    // Display confirmation message
+    e.returnValue = 'Are you sure you want to leave? Changes you made may not be saved.';
+  });
+});

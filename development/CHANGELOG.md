@@ -32,3 +32,7 @@
 - Moved infinity logos to assets/images/infinity
 - Added categories of games
 - Renamed games/game.html or games/display.html, renamed ?game query to ?g
+
+## v1.3.1 - Anti-tab-close - 3/22/24
+
+- Made it so a teacher can't close the tab remotely.
