@@ -10,16 +10,25 @@
   background-size: cover;
   width: 100px;
   height: 100px;
-  margin: 10px; /* Adjust the margin as needed */
+  margin: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Align items to the bottom */
-  border: 1px solid white;
-  overflow: hidden; /* Hides any content that overflows its container */
+  justify-content: flex-end;
+  border: 1px solid var(--text-color);
+  word-break: break-word;
+  overflow: hidden;
   text-overflow: ellipsis;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .game-box span {
-  margin-bottom: 5px; /* Optional: Add some spacing between the text and the bottom */
+  margin-bottom: 5px;
+}
+
+input {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  font-family: Orbitron;
 }

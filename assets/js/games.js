@@ -400,7 +400,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   gameNames.forEach(function (gameName) {
     const gameImg = `../images/games/${gameName}.png`;
-    const gameLink = `files/${gameName}/index.html`;
+    const gameLink = `game.html?game=${gameName}`;
 
     const gameBox = document.createElement("div");
     gameBox.classList.add("game-box");
@@ -415,6 +415,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     gamesWrapper.appendChild(gameBox);
+
+    document.getElementById("searchInput").addEventListener("input", function() {
+      const filterValue = this.value.toLowerCase();
+    
+      document.querySelectorAll('.game-box').forEach(function(gameBox) {
+        const gameText = gameBox.textContent.toLowerCase();
+        if (gameText.includes(filterValue)) {
+          gameBox.style.display = 'block';
+        } else {
+          gameBox.style.display = 'none';
+        }
+      });
+    });
   });
 });
 

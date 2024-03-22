@@ -28,10 +28,10 @@ button {
   height: 100px;
   border-radius: 5px;
   font-family: "Orbitron", sans-serif;
+  cursor: pointer;
 }
 
 .material-icon {
   font-family: 'Material Icons', sans-serif;
   font-size: 150%;
 }
-
