@@ -23,7 +23,7 @@
 - Made game boxes use word breaks
 - Fixed outline with game boxes not syncing with theme
 - Fixed 404.html's CSS and JS referencing not working on subpages
-- Changed layout of CHANGELOG.md to make more sense and to be easier to read
+- Changed layout of development/CHANGELOG.md to make more sense and to be easier to read
 - Made theme buttons look like their themes
 
 ## v1.3 - Categories - 3/22/24
@@ -41,7 +41,12 @@
 
 - Added an alternate links page
 - Added a feedback page
-- Renamed global-theme.js to global.js
+- Renamed assets/js/global-theme.js to assets/js/global.js
 - Removed the remote tab close prevention, because it kept breaking
 - Added rudimentary tab cloaking
 - Made all game names lowercase
+
+## v1.4.1 - Fixed game names - 3/25/24
+
+- Reordered game names in assets/js/games.js
+- Fixed some incorrect file names in development/CHANGELOG.md
