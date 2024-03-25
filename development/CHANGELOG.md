@@ -33,6 +33,15 @@
 - Added categories of games
 - Renamed games/game.html or games/display.html, renamed ?game query to ?g
 
-## v1.3.1 - Anti-tab-close - 3/22/24
+### v1.3.1 - Anti-tab-close - 3/22/24
 
 - Made it so a teacher can't close the tab remotely.
+
+## v1.4 - Alternate Links & Feedback - 3/23/24-3/25/24
+
+- Added an alternate links page
+- Added a feedback page
+- Renamed global-theme.js to global.js
+- Removed the remote tab close prevention, because it kept breaking
+- Added rudimentary tab cloaking
+- Made all game names lowercase

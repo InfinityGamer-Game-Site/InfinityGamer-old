@@ -20,10 +20,14 @@ if (savedTheme) {
   toggleTheme("dark");
 }
 
-window.addEventListener('load', function() {
-  // Add event listener to detect when user tries to leave the page
-  window.addEventListener('beforeunload', function(e) {
-    // Display confirmation message
-    e.returnValue = 'Are you sure you want to leave? Changes you made may not be saved.';
-  });
+document.addEventListener('DOMContentLoaded', function() {
+  const savedTitle = localStorage.getItem('title');
+
+  if (savedFaviconUrl && savedTitle) {
+      changeTitle(savedTitle);
+  }
 });
+
+function changeTitle(title) {
+  document.title = title;
+}

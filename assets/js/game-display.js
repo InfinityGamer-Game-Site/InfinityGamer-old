@@ -4,12 +4,21 @@ const searchParam = urlParams.get("g");
 
 if (searchParam) {
   let title = toTitleCase(searchParam.replace(/-/g, " "));
-  document.getElementById("gameFrame").src = "files/" + searchParam + "/index.html";
+  document.getElementById("gameFrame").src =
+    "files/" + searchParam + "/index.html";
   document.getElementById("gameName").textContent = title;
-  document.getElementById("fullscreenButton").href = "files/" + searchParam + "/index.html";
-  document.getElementById("sourceButton").href = "https://github.com/InfinityGamer-Game-Site/InfinityGamer/tree/main/games/files/" + searchParam;
-  document.title = title + " - InfinityGamer";
-
+  document.getElementById("fullscreenButton").href =
+    "files/" + searchParam + "/index.html";
+  document.getElementById("sourceButton").href =
+    "https://github.com/InfinityGamer-Game-Site/InfinityGamer/tree/main/games/files/" +
+    searchParam;
+  const savedTitle = localStorage.getItem("title");
+  
+  if (savedTitle) {
+    document.title = savedTitle;
+  } else {
+    document.title = title + " - InfinityGamer";
+  }
 }
 
 function toTitleCase(str) {
