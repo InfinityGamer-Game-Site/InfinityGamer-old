@@ -23,7 +23,7 @@ if (savedTheme) {
 document.addEventListener('DOMContentLoaded', function() {
   const savedTitle = localStorage.getItem('title');
 
-  if (savedFaviconUrl && savedTitle) {
+  if (savedTitle) {
       changeTitle(savedTitle);
   }
 });
@@ -31,3 +31,25 @@ document.addEventListener('DOMContentLoaded', function() {
 function changeTitle(title) {
   document.title = title;
 }
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var storedFont = localStorage.getItem('selectedFont');
+  if (storedFont) {
+    document.body.style.fontFamily = storedFont;
+    const buttons = document.querySelectorAll("button");
+    buttons.forEach(button => {
+      button.style.fontFamily = storedFont;
+    });
+    const gameboxes = document.querySelectorAll("game-box");
+    gameboxes.forEach(button => {
+      gameboxes.style.fontFamily = storedFont;
+    });
+    const inputs = document.querySelectorAll("input");
+    inputs.forEach(button => {
+      inputs.style.fontFamily = storedFont;
+    });
+  }
+});
+

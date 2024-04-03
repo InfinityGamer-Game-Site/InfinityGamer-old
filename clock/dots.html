@@ -1,0 +1,27 @@
+<head>
+  <title>InfinityClock</title>
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="../assets/css/clock.css">
+</head>
+<body>
+  <main-clock id="main-clock">Loading...</main-clock>
+  <script src="../assets/js/global.js"></script>
+  <script src="../assets/js/clock/three.r134.min.js"></script>
+  <script src="../assets/js/clock/vanta.dots.min.js"></script>
+  <script src="../assets/js/clock/global.js"></script>
+  <script>
+    VANTA.DOTS({
+  el: "body",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: window.innerHeight,
+  minWidth: window.innerWidth,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: color3custom,
+  color2: color2custom,
+  backgroundColor: color1custom
+})
+</script>
+</body>

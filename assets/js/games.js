@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const gameNames = [
     "1",
     "10-minutes-till-dawn",
-    "100ng",
+    "100-player-pong",
     "1v1lol",
     "2020-game",
     "2048-multitask",

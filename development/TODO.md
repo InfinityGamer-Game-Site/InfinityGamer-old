@@ -1,2 +1,0 @@
-- Add images to games
-- Add clock page

@@ -26,3 +26,10 @@ nav ul li a {
 nav ul li a:hover {
   background-color: var(--link-color);
 }
+
+#time {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 125%;
+}

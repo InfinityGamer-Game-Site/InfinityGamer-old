@@ -2,7 +2,8 @@
 
 - Released the site.
 
-## v1.1 - First fixes - 3/19/24-3/21/24
+## v1.1 - First fixes 
+3/19/24 - 3/21/24
 
 - Fixed game names and removed duplicates
 - Added bubblegum, gray, neo and forest themes
@@ -12,11 +13,13 @@
 - Added license
 - Added easter egg
 
-### v1.1.1 - SM64 Typo - 3/21/24
+### v1.1.1 - SM64 Typo
+3/21/24
 
 - Renamed games/files/super-maio-64 to games/files/super-mario-64, which fixed a referencing error
 
-## v1.2 - Search bar and game display page - 3/21/24
+## v1.2 - Search bar and game display page
+3/21/24
 
 - Made a page that displays the games and their title with option to go fullscreen or view the source code.
 - Added search bar for games
@@ -26,18 +29,21 @@
 - Changed layout of development/CHANGELOG.md to make more sense and to be easier to read
 - Made theme buttons look like their themes
 
-## v1.3 - Categories - 3/22/24
+## v1.3 - Categories
+3/22/24
 
 - Renamed minecraft games fom starting with mc to start with minecraft
 - Moved infinity logos to assets/images/infinity
 - Added categories of games
 - Renamed games/game.html or games/display.html, renamed ?game query to ?g
 
-### v1.3.1 - Anti-tab-close - 3/22/24
+### v1.3.1 - Anti-tab-close
+3/22/24
 
 - Made it so a teacher can't close the tab remotely.
 
-## v1.4 - Alternate Links & Feedback - 3/23/24-3/25/24
+## v1.4 - Alternate Links & Feedback
+3/23/24 - 3/25/24
 
 - Added an alternate links page
 - Added a feedback page
@@ -46,7 +52,22 @@
 - Added rudimentary tab cloaking
 - Made all game names lowercase
 
-## v1.4.1 - Fixed game names - 3/25/24
+### v1.4.1 - Fixed game names
+3/25/24
 
 - Reordered game names in assets/js/games.js
 - Fixed some incorrect file names in development/CHANGELOG.md
+
+## v1.5 - Clock 
+3/25/24 - 4/3/24
+
+- Added new clock pages with interactive and animated backgrounds
+- Added font customization
+- Added lots of new themes
+- Improved css in alt-links.html and proxy/index.html
+- Fixed broken cloaking
+- Made navbar taller
+- Renamed games/files/100ng to games/files/100-player-pong
+- Made the annoying "GoGuardian Privacy Banner" not show on this site for people that have it.
+- Renamed the development directory to docs, to make more sense
+- Changed the layout of docs/CHANGELOG.md a little bit
