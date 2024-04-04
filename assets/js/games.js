@@ -188,6 +188,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "idle-breakout",
     "idle-shark",
     "impossible-quiz",
+    "incremancer",
     "interactive-buddy",
     "jelly-truck",
     "jetpack",

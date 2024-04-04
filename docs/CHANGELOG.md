@@ -71,3 +71,7 @@
 - Made the annoying "GoGuardian Privacy Banner" not show on this site for people that have it.
 - Renamed the development directory to docs, to make more sense
 - Changed the layout of docs/CHANGELOG.md a little bit
+
+### v1.5.1 - Incremancer
+
+- Added incremancer to games
