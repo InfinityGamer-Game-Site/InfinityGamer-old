@@ -73,5 +73,12 @@
 - Changed the layout of docs/CHANGELOG.md a little bit
 
 ### v1.5.1 - Incremancer
+4/4/24
 
 - Added incremancer to games
+
+#### v1.5.1.1 - Incremancer fix 
+4/4/24
+
+- Tried to fix incremancer
+- Made navbar clock update faster

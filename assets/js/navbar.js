@@ -9,5 +9,6 @@ function updateClock() {
     mainClock.textContent = currentTime;
 }
 
+
   // Call the updateClock function every second (1000 milliseconds)
-setInterval(updateClock, 1000);
+setInterval(updateClock, 100);
