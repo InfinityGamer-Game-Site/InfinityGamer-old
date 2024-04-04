@@ -84,5 +84,11 @@
 - Made navbar clock update faster
 
 #### v1.5.1.2 - Incremancer fix 2
+4/4/24
 
 - Tried to fix incremancer
+
+#### v1.5.1.3 - Rename Incremancer
+4/4/24
+
+- Renamed incremancer-master to incremancer
