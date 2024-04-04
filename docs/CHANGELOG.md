@@ -82,3 +82,7 @@
 
 - Tried to fix incremancer
 - Made navbar clock update faster
+
+#### v1.5.1.2 - Incremancer fix 2
+
+- Tried to fix incremancer
