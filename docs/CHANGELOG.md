@@ -92,3 +92,8 @@
 4/4/24
 
 - Renamed incremancer-master to incremancer
+
+### v1.5.2 - Update Cookie Clicker
+4/9/24
+
+- Updated Cookie Clicker to newest version
