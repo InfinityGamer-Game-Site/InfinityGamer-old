@@ -97,3 +97,7 @@
 4/9/24
 
 - Updated Cookie Clicker to newest version
+
+### v1.5.2.1 - Add note to try fullscreen
+
+- Added note to try fullscreen
