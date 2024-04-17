@@ -220,6 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "mini-stilts",
     "miniputt",
     "missiles",
+    "monkey-mart",
     "moto-x3m-2",
     "moto-x3m-pool-party",
     "moto-x3m-spooky",
@@ -497,7 +498,26 @@ document.addEventListener("DOMContentLoaded", function () {
           });
         });
     });
+    let randomIndex = Math.floor(Math.random() * gameNames.length);
+let randomGame = gameNames[randomIndex];
+
+    const gameImg = `../images/games/${randomGame}.png`;
+      const gameLink = `display.html?g=${randomGame}`;
+
+      const gameBox = document.createElement("div");
+      gameBox.classList.add("game-box");
+      gameBox.style.backgroundImage = `url('${gameImg}')`;
+
+      const gameText = document.createElement("span");
+      gameText.textContent = toTitleCase(randomGame.replace(/-/g, " ")); // Convert to title case and replace dashes with spaces
+      gameBox.appendChild(gameText);
+
+      gameBox.addEventListener("click", function () {
+        window.location.href = gameLink;
+      });
+      document.getElementById("random-game-container").appendChild(gameBox);
   }
+
 });
 
 //Created by ChatGPT

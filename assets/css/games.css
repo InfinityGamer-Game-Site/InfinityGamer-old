@@ -1,9 +1,16 @@
-#games-wrapper {
+#games-wrapper{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 50px;
+}
+
+#random-game-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .game-box {

@@ -1,6 +1,7 @@
 /* clock.css */
 
 body, html {
+    text-align: right;
     height: 100%;
     margin: 0;
 }
@@ -16,4 +17,8 @@ main-clock {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+img {
+    outline: none;
 }
