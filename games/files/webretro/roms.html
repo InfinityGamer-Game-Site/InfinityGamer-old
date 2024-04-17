@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="me when embed">
-  <meta name="author" content="3kh0, surely">
-  <title>select a rom...</title>
-  <link rel="icon" href="/favicon.ico">
-</head>
-  
-<body>
-  <style type="text/css">
-    html {
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta name="description" content="me when embed"><meta name="author" content="3kh0, surely"><title>select a rom...</title><link rel="icon" href="/favicon.ico"></head><body><style type="text/css">html {
       background: #30303a;
       color: white;
       font-family: sans-serif;
@@ -67,25 +53,7 @@
 
     .rom {
       width: 10rem;
-    }
-  </style>
-  
-  <div class="items">
-    <!-- TEMPLATE (anything in CAPS is a placeholder)
-    <div class="rom">
-      <a href="./index.html?core=autodetect&rom=ROM_FILE_NAME">
-          <img alt="TITLE" loading="lazy" data-loaded="1" class="image" src="./thumb/THUMBNAIL">
-          <p>
-            TITLE
-          </p>
-      </a>
-    </div>
-    -->
-    loading roms...
-  </div>
-  <script type="application/javascript" src="/js/main.js"></script>
-  <script>
-    console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+    }</style><div class="items">loading roms...</div><script type="application/javascript" src="/js/main.js"></script><script>console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
     fetch("./roms.json").then((res) => {
         res.json().then((roms) => {
         document.querySelector('.items').innerHTML = "";
@@ -100,8 +68,4 @@
       </div>`;
         });
       });
-    });
-  </script>
-</body>
-
-</html>
+    });</script></body></html>

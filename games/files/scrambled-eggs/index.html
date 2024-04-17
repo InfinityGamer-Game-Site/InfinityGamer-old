@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en-us">
-
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Scrambled Eggs</title>
-	<script src="Build/UnityLoader.js"></script>
-	<script>
-		var gameInstance = UnityLoader.instantiate("gameContainer", "Build/SE_HTML.json");
+<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Scrambled Eggs</title><script src="Build/UnityLoader.js"></script><script>var gameInstance = UnityLoader.instantiate("gameContainer", "Build/SE_HTML.json");
 		var scaleToFit;
 		try {
 			scaleToFit = !!JSON.parse("");
@@ -41,10 +32,7 @@
 			container.style.top = Math.floor((window.innerHeight - h) / 2) + "px";
 			container.style.left = Math.floor((window.innerWidth - w) / 2) + "px";
 		}
-		window.addEventListener('resize', onResize);
-	</script>
-	<style>
-		html,
+		window.addEventListener('resize', onResize);</script><style>html,
 		body {
 			background: #000;
 			background: ;
@@ -74,12 +62,4 @@
 			image-rendering: optimize-contrast;
 			image-rendering: pixelated;
 			-ms-interpolation-mode: nearest-neighbor;
-		}
-	</style>
-</head>
-
-<body onload="onResize();">
-	<div id="gameContainer" data-pixelated=""></div>
-</body>
-
-</html>
+		}</style></head><body onload="onResize();"><div id="gameContainer" data-pixelated=""></div></body></html>

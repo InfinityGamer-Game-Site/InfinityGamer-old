@@ -1,11 +1,4 @@
-<!doctype html>
-<html lang="en-us">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Unity WebGL Player | Aspiring artist idle</title>
-  <style>
-    * {
+<!doctype html><html lang="en-us"><head><meta charset="utf-8"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Unity WebGL Player | Aspiring artist idle</title><style>* {
       margin: 0;
       padding: 0;
     }
@@ -122,15 +115,7 @@
       to {
         top: 225%
       }
-    }
-  </style>
-
-  <script src='https://cdn1.kongregate.com/javascripts/kongregate_api.js'>
-  </script>
-
-  <script src="Build/UnityLoader.js"></script>
-  <script>
-    function UnityProgress(gameInstance, progress) {
+    }</style><script src="https://cdn1.kongregate.com/javascripts/kongregate_api.js"></script><script src="Build/UnityLoader.js"></script><script>function UnityProgress(gameInstance, progress) {
       var container = document.getElementById('gameContainer');
       if (container) document.body.style.background = container.style.background;
 
@@ -160,20 +145,4 @@
       Module: {
         onRuntimeInitialized: function() { UnityProgress(gameInstance, "complete") }
       }
-    });
-  </script>
-</head>
-<body>
-  <div id="webgl-content" style="width: 800px; height: 600px">
-    <div id="gameContainer" style="width: 800px; height: 600px"></div>
-  </div>
-  <div id="box"></div>
-  <div id="loadingBox">
-    <div id="spinner"></div>
-    <div id="bgBar"></div>
-    <div id="progressBar"></div>
-  </div>
-   <div id="icon"></div> </a>
-  <p id="loadingInfo"></p>
-</body>
-</html>
+    });</script></head><body><div id="webgl-content" style="width: 800px; height: 600px"><div id="gameContainer" style="width: 800px; height: 600px"></div></div><div id="box"></div><div id="loadingBox"><div id="spinner"></div><div id="bgBar"></div><div id="progressBar"></div></div><div id="icon"></div><p id="loadingInfo"></p></body></html>

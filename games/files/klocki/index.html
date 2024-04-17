@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Klocki Free</title>
-	<script src="Build/UnityLoader.js"></script>
-	<script>
-		var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Klocki_Demo_Armor.json");
+<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Klocki Free</title><script src="Build/UnityLoader.js"></script><script>var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Klocki_Demo_Armor.json");
 		var scaleToFit;
 		try{
 			scaleToFit = !!JSON.parse("");
@@ -38,10 +30,7 @@
 			container.style.height = canvas.style.height = h + "px";
 			container.style.top = Math.floor((window.innerHeight - h)/2) + "px";
 			container.style.left = Math.floor((window.innerWidth - w)/2) + "px";
-		}
-	</script>
-	<style>
-		html,body{
+		}</script><style>html,body{
 			background: #000;
 			background: ;
 			width: 100%;
@@ -65,10 +54,4 @@
             image-rendering: optimize-contrast;
 			image-rendering: pixelated;
 			-ms-interpolation-mode: nearest-neighbor;
-		}
-	</style>
-</head>
-<body onload="window.onresize();">
-	<div id="gameContainer"></div>
-</body>
-</html>
+		}</style></head><body onload="window.onresize();"><div id="gameContainer"></div></body></html>

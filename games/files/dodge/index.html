@@ -1,48 +1,8 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Dodge | Artridge</title>
-				<!-- <meta name="viewport" content="target-densitydpi=device-dpi, initial-scale=1.0, user-scalable=no" /> -->
-        <meta name="description" content="">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <link rel="preload" href="DodgeSoundOff.png" as="image">
-        <link rel="preload" href="DodgeSoundOn.png" as="image">
-        <link rel="preload" href="DodgePlay.png" as="image">
-        <link rel="preload" href="DodgeSwitch.png" as="image">
-        <link rel="preload" href="DodgeXButton.png" as="image">
-        <link rel="preload" href="DodgeOButton.png" as="image">
-        <link rel="preload" href="DodgePause.png" as="image">
-        <link rel="preload" href="DodgeUp.png" as="image">
-        <link rel="preload" href="DodgeDown.png" as="image">
-        <link rel="preload" href="cursor.png" as="image">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <script src="https://kit.fontawesome.com/cbebc4ac70.js"></script>
-  <link rel="stylesheet" href="style.css"></link>
-</head>
-<body bgcolor=#111> <!--Default : #303030-->
-  <button onclick="toggleSound(this)" class="show-if-not-touch fullscreen mute"><i class="fas fa-volume-mute"></i></button>
-  <button onclick="goInFullscreen(document.getElementById('canvas_container'))" class="fullscreen show-if-not-touch"><i class="fas fa-compress"></i></button>
-  <div class="trackpad show-if-touch" id="trackpad"><img class="show-if-touch" id="touch-cursor" src="cursor.png"></img><span id="move-indicator">MOVE HERE</span></div>
-	<div id="touch-buttons" class="touch-buttons show-if-touch">
-    <button style="background-size: 17% !important; border-right-width: calc(var(--border-size) / 2); border-bottom-width: calc(var(--border-size) / 2);" class="pico-btn" id="btn-p"><b></b></button>
-    <button style="border-left-width: calc(var(--border-size) / 2); border-bottom-width: calc(var(--border-size) / 2);" class="pico-btn" id="switch"></button><br>
-		<button style="border-right-width: calc(var(--border-size) / 2); border-top-width: calc(var(--border-size) / 2);"class="pico-btn" id="btn-x"></button>
-		<button style="border-left-width: calc(var(--border-size) / 2); border-top-width: calc(var(--border-size) / 2);"class="pico-btn" id="btn-o"></button>
-  </div>
-	<!--<br><br><br>-->
-	<center><div id="canvas_container" style="width:512px;">
-  <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
-  <script>
-    function toggleSound(element) {
+<html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Dodge | Artridge</title><meta name="description" content=""><meta name="apple-mobile-web-app-capable" content="yes"><link rel="preload" href="DodgeSoundOff.png" as="image"><link rel="preload" href="DodgeSoundOn.png" as="image"><link rel="preload" href="DodgePlay.png" as="image"><link rel="preload" href="DodgeSwitch.png" as="image"><link rel="preload" href="DodgeXButton.png" as="image"><link rel="preload" href="DodgeOButton.png" as="image"><link rel="preload" href="DodgePause.png" as="image"><link rel="preload" href="DodgeUp.png" as="image"><link rel="preload" href="DodgeDown.png" as="image"><link rel="preload" href="cursor.png" as="image"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script src="https://kit.fontawesome.com/cbebc4ac70.js"></script><link rel="stylesheet" href="style.css"></head><body bgcolor="#111"><button onclick="toggleSound(this)" class="show-if-not-touch fullscreen mute"><i class="fas fa-volume-mute"></i></button> <button onclick="goInFullscreen(document.getElementById('canvas_container'))" class="fullscreen show-if-not-touch"><i class="fas fa-compress"></i></button><div class="trackpad show-if-touch" id="trackpad"><img class="show-if-touch" id="touch-cursor" src="cursor.png"><span id="move-indicator">MOVE HERE</span></div><div id="touch-buttons" class="touch-buttons show-if-touch"><button style="background-size: 17% !important; border-right-width: calc(var(--border-size) / 2); border-bottom-width: calc(var(--border-size) / 2);" class="pico-btn" id="btn-p"><b></b></button> <button style="border-left-width: calc(var(--border-size) / 2); border-bottom-width: calc(var(--border-size) / 2);" class="pico-btn" id="switch"></button><br><button style="border-right-width: calc(var(--border-size) / 2); border-top-width: calc(var(--border-size) / 2);" class="pico-btn" id="btn-x"></button> <button style="border-left-width: calc(var(--border-size) / 2); border-top-width: calc(var(--border-size) / 2);" class="pico-btn" id="btn-o"></button></div><center><div id="canvas_container" style="width:512px;"><canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas><script>function toggleSound(element) {
       Module.pico8ToggleSound();
       element.children[0].classList.toggle("fa-volume-mute");
       element.children[0].classList.toggle("fa-volume-up");
-    }
-  </script>
-  <script type="text/javascript">
-
-		var canvas = document.getElementById("canvas");
+    }</script><script type="text/javascript">var canvas = document.getElementById("canvas");
 		canvas.width = window.innerWidth;
 		canvas.height = window.innerHeight;
 		// show Emscripten environment where the canvas is
@@ -62,15 +22,7 @@
 			// read and write to these values */
 			var pico8_gpio = new Array(128);
       pico8_gpio[0] = 64;
-      pico8_gpio[1] = 64;
-		
-	</script>
-		
-	<!-- <script async type="text/javascript" src="dodge.js"></script> -->
-	<script id="dodge-script" src="ios-sound.js" data-original-file="dodge.js"></script>
-	  
-	<script>
-		// key blocker. prevent cursor keys from scrolling page while playing cart.
+      pico8_gpio[1] = 64;</script><script id="dodge-script" src="ios-sound.js" data-original-file="dodge.js"></script><script>// key blocker. prevent cursor keys from scrolling page while playing cart.
 		
 		function onKeyDown_blocker(event) {
 			event = event || window.event;
@@ -83,48 +35,9 @@
 				}
 			}
 		}
-		document.addEventListener('keydown', onKeyDown_blocker, false);
-         
-	</script>
-        
-	<br>
-      <!--<div class="pico8_el_container">
-	<div onclick="backToSite()" class=pico8_el alt="Back to site" width=12 height=12>
-	      <a>Back to site</a>
-	</div>
-	<br>
-	<div class=pico8_el onclick="Module.pico8Reset();">
-	<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAaklEQVR4Ae2dOwoAMQhE15A+rfc/3bZ7AlMnQfywCkKsfcgMM9ZP+QHtIn0vLeBAFduiFdQ/0DmvtR5LXJ6CPSXe2ZXcFNlTxFbemKrbZPs35XogeS9xeQr+anT6LzoOwEDwZJ7jwhXUnwkTTiDQ2Ja34AAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII=" alt="Reset" width=12 height=	12/>
-	Reset</div>
-        <br>
-	<div class=pico8_el onclick="Module.pico8TogglePaused();">
-	<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAPUlEQVR4Ae3doQ0AIAxEUWABLPtPh2WCq26DwFSU/JPNT166QSu/Hg86W9dwLte+diP7AwAAAAAAgD+A+jM2ZAgo84I0PgAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII=" alt="Pause" width=12 height=12/>
-	Pause</div>
-	<br>
-	<div class=pico8_el onclick="Module.requestFullScreen(true, false);">
-	<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAaklEQVR4Ae2dsQ1AIQhExfze1v2ns3UCrfgFhmgUUAoGgHscp21wX9BqaZoDojbB96OkDJKNcTN2BHTyYNYmoT2BlPL7BKgcPfHjAVXKKadkHOn9K1r16N0czN6a95N8mnA7Aq2fTZ3Af3UKmCSMazL8HwAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII=" alt="Fullscreen" width=12 height=12/>
-	Fullscreen</div>
-	<br>
-	<div class=pico8_el onclick="Module.pico8ToggleSound();">
-	<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAXklEQVR4Ae2doQ4AIQxD4YLH8v9fh+ULhjpxxSwLg2uyapr1JRu1iV5Z+1BGl4+xNpX38SYo2uRvYiT5LwEmt+ocgXVLrhPEgBiw8Q5w7/kueSkK+D2tJO4E/I3GrwkqQCBabEj/4QAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII=" alt="Toggle Sound" width=12 height=12/>
-	
-	Sound</div>
-	<br>
-	<div class=pico8_el ><a target="_new" href="http://www.lexaloffle.com/bbs/?cat=7&sub=2">
-	<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAlElEQVR4Ae2dMQ5FQBCGh6jcwAkkateg3DiAa+iQUGqVKi95FQfAJRQOoHeBUf8JyQqKjZ1uMzuz2e/LTE3KhyF7kSlgLOykas23f6D+A9Yp84aAOYU15pcJnfji0Il2ID8HzC4y38ZrnfIBGxeRoR3c3EWrACdsV5BOsx7OSRnrOXh4F5HzA6bevwUn8wlz7eCDsQM99B3ks0s/4QAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII=" alt="More Carts" width=12 height=12/>
-	Carts</a></div>
-	<br>
-      </div>-->
-	<br>	
-	</div></center>
-	<br><br>
-       <script>
-        if (navigator.userAgent.match(/Android/i)) {
+		document.addEventListener('keydown', onKeyDown_blocker, false);</script><br><br></div></center><br><br><script>if (navigator.userAgent.match(/Android/i)) {
           ScreenOrientation.lock("portrait-primary");
-        }
-       </script>
-	<script>
-		function backToSite() {
+        }</script><script>function backToSite() {
 			window.location.assign("https://artridgegames.github.io#games");
     }
     
@@ -313,10 +226,7 @@
         var picoCanvas = document.getElementById("canvas");
         picoCanvas.style.backgroundColor =  "#FFF1E8";
       }
-    }, 50)
-	</script>
-	<script type="text/javascript">
-		var pico8_buttons = [0, 0, 0, 0, 0, 0, 0, 0];
+    }, 50)</script><script type="text/javascript">var pico8_buttons = [0, 0, 0, 0, 0, 0, 0, 0];
 		var btnO = document.getElementById("btn-o");
     var btnS = document.getElementById("switch");
     btnS.style.backgroundImage = "url(DodgeSwitch.png)"
@@ -428,9 +338,4 @@
 
       /* document.body.ontouchstart = function(e) {
         e.preventDefault();
-      } */
-  </script>
-  <!-- iOS Zoom on rotation bug fix -->
-  <script>(function(a){function j(){c.setAttribute("content",f),document.body.innerHTML=document.body.innerHTML,g=!0}function k(){c.setAttribute("content",e),g=!1}function l(b){h=Math.abs(a.orientation),i=Math.abs(b.accelerationIncludingGravity.x),i>8&&h===0?g&&k():g||j()}var b=a.document;if(!b.querySelectorAll)return;var c=b.querySelectorAll("meta[name=viewport]")[0],d=c&&c.getAttribute("content"),e=d+", maximum-scale=1.0",f=d+", maximum-scale=10.0",g=!0,h=a.orientation,i=0;if(!c)return;a.addEventListener("orientationchange",j,!1),a.addEventListener("devicemotion",l,!1)})(this);</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-</body></html><script defer src="https://static.itch.io/htmlgame.js" type="text/javascript"></script>
+      } */</script><script>(function(a){function j(){c.setAttribute("content",f),document.body.innerHTML=document.body.innerHTML,g=!0}function k(){c.setAttribute("content",e),g=!1}function l(b){h=Math.abs(a.orientation),i=Math.abs(b.accelerationIncludingGravity.x),i>8&&h===0?g&&k():g||j()}var b=a.document;if(!b.querySelectorAll)return;var c=b.querySelectorAll("meta[name=viewport]")[0],d=c&&c.getAttribute("content"),e=d+", maximum-scale=1.0",f=d+", maximum-scale=10.0",g=!0,h=a.orientation,i=0;if(!c)return;a.addEventListener("orientationchange",j,!1),a.addEventListener("devicemotion",l,!1)})(this);</script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script></body></html><script defer="defer" src="https://static.itch.io/htmlgame.js" type="text/javascript"></script>

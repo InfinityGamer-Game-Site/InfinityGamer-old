@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="authoring-tool" content="Adobe_Animate_CC">
-<title>green</title>
-<style>
-  #animation_container, #_preload_div_ {
-	position:absolute;
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="authoring-tool" content="Adobe_Animate_CC"><title>green</title><style>#animation_container, #_preload_div_ {position:absolute;
 	margin:auto;
 	left:0;right:0;
-  }
-</style>
-<script src="libs/1.0.0/createjs.min.js"></script>
-<script src="green.js?1586939711480"></script>
-<script>
-var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+  }</style><script src="libs/1.0.0/createjs.min.js"></script><script src="green.js?1586939711480"></script><script>var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
 	canvas = document.getElementById("canvas");
 	anim_container = document.getElementById("animation_container");
@@ -59,16 +46,4 @@ function handleComplete(evt,comp) {
 	fnStartAnimation();
 }
 function playSound(id, loop, offset) {
-	return createjs.Sound.play(id, {'interrupt':createjs.Sound.INTERRUPT_EARLY, 'loop': loop, 'offset': offset});}
-</script>
-<!-- write your code here -->
-</head>
-<body onload="init();" style="margin:0px;">
-	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:960px; height:720px">
-		<canvas id="canvas" width="960" height="720" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:960px; height:720px; position: absolute; left: 0px; top: 0px; display: none;">
-		</div>
-	</div>
-    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:720px; width: 960px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1586939711480 style='vertical-align: middle; max-height: 100%'/></div>
-</body>
-</html>
+	return createjs.Sound.play(id, {'interrupt':createjs.Sound.INTERRUPT_EARLY, 'loop': loop, 'offset': offset});}</script></head><body onload="init();" style="margin:0px;"><div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:960px; height:720px"><canvas id="canvas" width="960" height="720" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas><div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:960px; height:720px; position: absolute; left: 0px; top: 0px; display: none;"></div></div><div id="_preload_div_" style="position:absolute; top:0; left:0; display: inline-block; height:720px; width: 960px; text-align: center;"><span style="display: inline-block; height: 100%; vertical-align: middle;"></span>	<img src="images/_preloader.gif?1586939711480" style="vertical-align: middle; max-height: 100%"></div></body></html>

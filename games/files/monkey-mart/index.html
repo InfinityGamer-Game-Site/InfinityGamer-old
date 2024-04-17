@@ -38,12 +38,9 @@ goog.defineClass.applyProperties_=function(a,b){for(var c in b)Object.prototype.
 goog.createTrustedTypesPolicy=function(a){var b=null,c=goog.global.trustedTypes;if(!c||!c.createPolicy)return b;try{b=c.createPolicy(a,{createHTML:goog.identity_,createScript:goog.identity_,createScriptURL:goog.identity_})}catch(d){goog.logToConsole_(d.message)}return b};var google=window.google||{};
 google.csi=function(){function a(h){var m=g?g:document.location.href;return(h=m.match(new RegExp("[?&]"+h+"=([^&#]+)")))?h[1]:null}function b(h){window.jstiming.load.tick(h);f[h]=(new Date).getTime()}function c(){if(!l){var h=a("url")||"default",m=window.__csi||{},r=m.c||"default",v=m.v||"default",p=window.encodeURIComponent?encodeURIComponent:escape;p={gadget:p(h),container:p(r),view:p(v)};var t=window.__dflags||{},u=[];m.g&&u.push(m.g);if(m.d)for(var n in t)"control"!==t[n]&&(p[n]=t[n],"true"===
 t[n]&&u.push(n));p.e=u.join(",");n=k?k:document.location.protocol;n=e[n];window.jstiming.load.name=[r,"_",v].join("");window.jstiming.report(window.jstiming.load,p,n);(r=window.gadgets)&&r.rpc&&m.b&&(f.url=h,f.id=a("mid"),r.rpc.call(null,"time_iframe",void 0,f));l=!0}}function d(h){window.addEventListener?window.addEventListener("load",h,!1):window.attachEvent&&window.attachEvent("onload",h)}var e={"http:":"http://csi.gstatic.com/csi","https:":"https://gg.google.com/csi"},f={},g,k,l=!1,q=window.__csi||
-{};q.a?(d(function(){b("prt")}),window.onbeforeunload=function(){c()}):d(function(){b("ol");b("prt");c()});return{reset_:function(){l=!1},mockHref_:function(h){g=h},mockProtocol_:function(h){k=h},report_:c,tickPrtAndReport:function(){b("prt");c()},tickDl:function(){b("dl")}}}();
-</script><script>
-/* mp-start */
+{};q.a?(d(function(){b("prt")}),window.onbeforeunload=function(){c()}):d(function(){b("ol");b("prt");c()});return{reset_:function(){l=!1},mockHref_:function(h){g=h},mockProtocol_:function(h){k=h},report_:c,tickPrtAndReport:function(){b("prt");c()},tickDl:function(){b("dl")}}}();</script><script>/* mp-start */
 window['___jsl']=window['___jsl']||{};
-/* mp-end */
-</script><script>window['__isgadget']=true;</script><script>window['___jsl'] = window['___jsl'] || {};(window['___jsl']['ci'] = (window['___jsl']['ci'] || [])).push({"core.io":{"jsonProxyUrl":"//%host%/gadgets/makeRequest","proxyUrl":"//www.gmodules.com/gadgets/proxy/refresh=%refresh%&container=%container%%rewriteMime%&gadget=%gadget%/%rawurl%"},"shindig.auth":{"authToken":"","trustedJson":""},"core.util":{"core":{}}});var safeJSON=window.safeJSON;
+/* mp-end */</script><script>window['__isgadget']=true;</script><script>window['___jsl'] = window['___jsl'] || {};(window['___jsl']['ci'] = (window['___jsl']['ci'] || [])).push({"core.io":{"jsonProxyUrl":"//%host%/gadgets/makeRequest","proxyUrl":"//www.gmodules.com/gadgets/proxy/refresh=%refresh%&container=%container%%rewriteMime%&gadget=%gadget%/%rawurl%"},"shindig.auth":{"authToken":"","trustedJson":""},"core.util":{"core":{}}});var safeJSON=window.safeJSON;
 var tamings___=window.tamings___||[];
 var bridge___;
 var caja___=window.caja___;
@@ -767,9 +764,7 @@ default:i=l,f&&m(f,a,k,j,i)}else i=l,f&&m(f,a,k,j,i);b[g+1]=i}return b}function 
 typeof window&&window.document?window.document.createElement("textarea"):l,$=/\0/g,U=/&(#[0-9]+|#[xX][0-9A-Fa-f]+|\w+);/g,Y=/^(#[0-9]+|#[xX][0-9A-Fa-f]+|\w+);/,N=/&/g,W=/&([^a-z#]|#(?:[^0-9x]|x(?:[^0-9a-f]|$)|$)|$)/gi,F=/[<]/g,G=/>/g,V=/\"/g,Z=/^\s*([-.:\w]+)(?:\s*(=)\s*((")[^"]*("|$)|(')[^']*('|$)|(?=[a-z][-\w]*\s*=)|[^"'\s]*))?/i,X=3==="a,b".split(/(,)/).length,O=e.c.CDATA|e.c.RCDATA,t={},H={},aa=/^(?:https?|geo|mailto|sms|tel)$/i,o={};o.ka=o.escapeAttrib=v;o.la=o.escapePcdata=b;o.ma=o.makeHtmlSanitizer=
 a;o.na=o.makeSaxParser=z;o.oa=o.makeTagPolicy=g;o.qa=o.normalizeRCData=p;o.ra=o.sanitize=function(a,b,c,e){return L(a,g(b,c,e))};o.sa=o.sanitizeAttribs=s;o.ta=o.sanitizeWithPolicy=L;o.ua=o.unescapeEntities=u;return o}(M),ba=Q.sanitize;"undefined"!==typeof window&&(window.html=Q,window.html_sanitize=ba);})();
 ;
-gadgets.config.init({"core.io":{"jsonProxyUrl":"//%host%/gadgets/makeRequest","proxyUrl":"//www.gmodules.com/gadgets/proxy/refresh=%refresh%&container=%container%%rewriteMime%&gadget=%gadget%/%rawurl%"},"shindig.auth":{"authToken":"","trustedJson":""},"core.util":{"core":{}}});
-</script><script>gadgets.Prefs.setMessages_({});gadgets.Prefs.setDefaultPrefs_({});gadgets.io.preloaded_=[];</script><style type="text/css">
-        /* Disable user selection to avoid strange bug in Chrome on Windows:
+gadgets.config.init({"core.io":{"jsonProxyUrl":"//%host%/gadgets/makeRequest","proxyUrl":"//www.gmodules.com/gadgets/proxy/refresh=%refresh%&container=%container%%rewriteMime%&gadget=%gadget%/%rawurl%"},"shindig.auth":{"authToken":"","trustedJson":""},"core.util":{"core":{}}});</script><script>gadgets.Prefs.setMessages_({});gadgets.Prefs.setDefaultPrefs_({});gadgets.io.preloaded_=[];</script><style type="text/css">/* Disable user selection to avoid strange bug in Chrome on Windows:
 	* Selecting a text outside the canvas, then clicking+draging would
 	* drag the selected text but block mouse down/up events to the engine.
 	*/
@@ -899,18 +894,7 @@ gadgets.config.init({"core.io":{"jsonProxyUrl":"//%host%/gadgets/makeRequest","p
             background-position: top;
             background-size: cover;
             background-image: url("https://218463058-163927403382736103.preview.editmysite.com/uploads/b/139890129-297434511671085883/files/bg_loading.png");
-        }
-    </style>
-    <meta charset="utf-8">
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui, shrink-to-fit=no" name="viewport">
-    <meta content="yes" name="apple-mobile-web-app-capable">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Monkey Mart</title>
-    
-	
-    
-<style type="text/css">#button {
+        }</style><meta charset="utf-8"><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,minimal-ui,shrink-to-fit=no" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><title>Monkey Mart</title><style type="text/css">#button {
   display:none;
 }
 .imgb_vis {
@@ -12934,33 +12918,10 @@ if (Module["preInit"]) {
 var shouldRunNow = true;
 if (Module["noInitialRun"]) shouldRunNow = false;
 noExitRuntime = true;
-run();</script></head><body dir="ltr" data-new-gr-c-s-check-loaded="14.1100.0" data-gr-ext-installed=""><script src="https://218463058-163927403382736103.preview.editmysite.com/uploads/b/139890129-297434511671085883/files/Jump_Gamemonetize3.js" type="text/javascript"></script><script>
-        var mpConfig = {
+run();</script></head><body dir="ltr" data-new-gr-c-s-check-loaded="14.1100.0" data-gr-ext-installed=""><script src="https://218463058-163927403382736103.preview.editmysite.com/uploads/b/139890129-297434511671085883/files/Jump_Gamemonetize3.js" type="text/javascript"></script><script>var mpConfig = {
             "game": "monkey-mart",
             "partner": "miniplay"
-        };
-    </script>
-    <div class="canvas-app-container" id="app-container" style="width: 1366px; height: 665px;">
-        <div class="canvas-app-canvas-container" id="canvas-container">
-            <canvas class="canvas-app-canvas" height="665" id="canvas" tabindex="1" width="1366"></canvas>
-        </div>
-        <div class="buttons-background">
-        </div>
-        <!-- center and anchor to bottom of page -->
-        <div id="progress-bar-root" style="position: absolute; bottom: 54px; left: 50%; visibility: hidden; z-index: 4;">
-            <!-- <div id="progress-bar-text"> -->
-            <img id="progress-bar-bg" src="https://218463058-163927403382736103.preview.editmysite.com/uploads/b/139890129-297434511671085883/files/load_bar_bg.png" width="499" style="margin-left: -249.5px;">
-            <img id="progress-bar-fg" src="https://218463058-163927403382736103.preview.editmysite.com/uploads/b/139890129-297434511671085883/files/load_bar_fg.png" style="position: absolute; clip: rect(0px, 499px, 40px, 0px); margin-top: 0px; margin-left: -499px;" width="499">
-        </div>
-    </div>
-    <!-- -->
-    <!-- <div id="bannerTop" class="banner-styleTop"></div> -->
-    <!-- <div id="bannerBottom" class="banner-styleBottom"></div> -->
-    <!-- -->
-    <script id="engine-loader" src="https://218463058-163927403382736103.preview.editmysite.com/uploads/b/139890129-297434511671085883/files/dmloader.js" type="text/javascript"></script>
-    <!-- -->
-    <script id="engine-setup" type="text/javascript">
-        var extra_params = {
+        };</script><div class="canvas-app-container" id="app-container" style="width: 1366px; height: 665px;"><div class="canvas-app-canvas-container" id="canvas-container"><canvas class="canvas-app-canvas" height="665" id="canvas" tabindex="1" width="1366"></canvas></div><div class="buttons-background"></div><div id="progress-bar-root" style="position: absolute; bottom: 54px; left: 50%; visibility: hidden; z-index: 4;"><img id="progress-bar-bg" src="https://218463058-163927403382736103.preview.editmysite.com/uploads/b/139890129-297434511671085883/files/load_bar_bg.png" width="499" style="margin-left: -249.5px;"> <img id="progress-bar-fg" src="https://218463058-163927403382736103.preview.editmysite.com/uploads/b/139890129-297434511671085883/files/load_bar_fg.png" style="position: absolute; clip: rect(0px, 499px, 40px, 0px); margin-top: 0px; margin-left: -499px;" width="499"></div></div><script id="engine-loader" src="https://218463058-163927403382736103.preview.editmysite.com/uploads/b/139890129-297434511671085883/files/dmloader.js" type="text/javascript"></script><script id="engine-setup" type="text/javascript">var extra_params = {
             archive_location_filter: function(path) {
                 return ("https://218463058-163927403382736103.preview.editmysite.com/uploads/b/139890129-297434511671085883/files/archive" + path + "");
             },
@@ -13100,10 +13061,7 @@ run();</script></head><body dir="ltr" data-new-gr-c-s-check-loaded="14.1100.0" d
             if (Module._archiveLoaded) {
                 // 
             }
-        };
-    </script>
-    <script id="engine-start" type="text/javascript">
-        var currentPercentage = 0
+        };</script><script id="engine-start" type="text/javascript">var currentPercentage = 0
 
         Progress.updateProgress = function(percentage) {
             Progress.notifyListeners(percentage);
@@ -13135,10 +13093,7 @@ run();</script></head><body dir="ltr" data-new-gr-c-s-check-loaded="14.1100.0" d
         }
 
         EngineLoader.stream_wasm ="false" ==="true";
-        EngineLoader.load("canvas", "https://218463058-163927403382736103.preview.editmysite.com/uploads/b/139890129-297434511671085883/files/MonkeyMart");
-    </script>
-    <script type="text/javascript">
-        function poki_showBanner(vBanner) {}
+        EngineLoader.load("canvas", "https://218463058-163927403382736103.preview.editmysite.com/uploads/b/139890129-297434511671085883/files/MonkeyMart");</script><script type="text/javascript">function poki_showBanner(vBanner) {}
 
         function poki_showBigBanner(vBanner) {}
 
@@ -13146,10 +13101,7 @@ run();</script></head><body dir="ltr" data-new-gr-c-s-check-loaded="14.1100.0" d
 
         function poki_check() {
 
-        }
-    </script>
-    <script id="poki-sdk-setup" type="text/javascript">
-        var data = {};
+        }</script><script id="poki-sdk-setup" type="text/javascript">var data = {};
         var isLoadFinished = false;
         Progress.addListener(function(percentage) {
             data.percentageDone = percentage / 100;
@@ -13161,11 +13113,4 @@ run();</script></head><body dir="ltr" data-new-gr-c-s-check-loaded="14.1100.0" d
         Module['onRuntimeInitialized'] = function() {
             Module.runApp("canvas", extra_params);
         };
-        JumpGame.startup("ugi7ftbv2kgodcq7vful9u9v34wein5z");
-    </script>
-    <script src="https://218463058-163927403382736103.preview.editmysite.com/uploads/b/139890129-297434511671085883/files/GameAnalytics.js" type="text/javascript"></script>
-	<script src="https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/addc4348-16c2-4645-9dff-f99b962e39ef%2Fscr.js"></script>
-
-
-<script>gadgets.util.runOnLoadHandlers();</script><script>window.google.csi.tickDl();
-</script><div id="button" class="imgb imgb_vis" style="position: fixed; top: 10%; left: -100px; z-index: 10; display: none;"><a target="_blank" href="https://sites.google.com/site/classroom6x/" title="More of best games"><img src="https://lh4.googleusercontent.com/lUEWrXMVEr4AdjKISyJahDRJ61bwfvHdpeYm86Djn5U8oCm9dI60NGXSBqad9HUvzTXgqlkosA_hWV-VuXPjzrkGvh3_kNSgYk8ySWzXnDpbBCBiooyBbU8oBy3YBZMDkW8RcRVmDuC0raoeqZBm8kBlqs6c5mdfkJeN2aE68lXS_lcOZ5_F7lIuM6qLVg" width="100" height="30" style="cursor:pointer;" alt="More Unblocked Games"></a></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+        JumpGame.startup("ugi7ftbv2kgodcq7vful9u9v34wein5z");</script><script src="https://218463058-163927403382736103.preview.editmysite.com/uploads/b/139890129-297434511671085883/files/GameAnalytics.js" type="text/javascript"></script><script src="https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/addc4348-16c2-4645-9dff-f99b962e39ef%2Fscr.js"></script><script>gadgets.util.runOnLoadHandlers();</script><script>window.google.csi.tickDl();</script><div id="button" class="imgb imgb_vis" style="position: fixed; top: 10%; left: -100px; z-index: 10; display: none;"><a target="_blank" href="https://sites.google.com/site/classroom6x/" title="More of best games"><img src="https://lh4.googleusercontent.com/lUEWrXMVEr4AdjKISyJahDRJ61bwfvHdpeYm86Djn5U8oCm9dI60NGXSBqad9HUvzTXgqlkosA_hWV-VuXPjzrkGvh3_kNSgYk8ySWzXnDpbBCBiooyBbU8oBy3YBZMDkW8RcRVmDuC0raoeqZBm8kBlqs6c5mdfkJeN2aE68lXS_lcOZ5_F7lIuM6qLVg" width="100" height="30" style="cursor:pointer;" alt="More Unblocked Games"></a></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

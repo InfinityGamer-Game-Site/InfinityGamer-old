@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Stack | 3kh0</title>
-    <link rel="icon" href="stack.png">
-    <script type="text/javascript">
-      function disableselect(e) {
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Stack | 3kh0</title><link rel="icon" href="stack.png"><script type="text/javascript">function disableselect(e) {
         return false;
       }
 
@@ -20,10 +13,7 @@
       if (window.sidebar) {
         document.onmousedown = disableselect;
         document.onclick = reEnable;
-      }
-    </script>
-    <style>
-      @import url("https://fonts.googleapis.com/css?family=Comfortaa");
+      }</script><style>@import url("https://fonts.googleapis.com/css?family=Comfortaa");
       html,
       body {
         margin: 0;
@@ -162,40 +152,9 @@
       #container.ended .game-over p {
         -webkit-transition-delay: 0.3s;
         transition-delay: 0.3s;
-      }
-    </style>
-    <script>
-      window.console = window.console || function (t) {};
-    </script>
-    <script>
-      if (document.location.search.match(/type=embed/gi)) {
+      }</style><script>window.console = window.console || function (t) {};</script><script>if (document.location.search.match(/type=embed/gi)) {
         window.parent.postMessage("resize", "*");
-      }
-    </script>
-  </head>
-  <body oncontextmenu="return false;" id="ancss">
-    <meta name="viewport" content="width=device-width,user-scalable=no" />
-    <div id="container">
-      <div id="game"></div>
-      <div id="score">0</div>
-      <div id="instructions">
-        Click (or press the spacebar) to place the block
-      </div>
-      <div class="game-over">
-        <h2>Game Over</h2>
-        <p>You did great, you're the best.</p>
-        <p>Click or spacebar to start again</p>
-      </div>
-      <div class="game-ready">
-        <div id="start-button">Start</div>
-        <div></div>
-      </div>
-    </div>
-    <script src="main.js"></script>
-    <script src="three.min.js"></script>
-    <script src="TweenMax.min.js"></script>
-    <script id="rendered-js">
-      "use strict";
+      }</script></head><body oncontextmenu="return false;" id="ancss"><meta name="viewport" content="width=device-width,user-scalable=no"><div id="container"><div id="game"></div><div id="score">0</div><div id="instructions">Click (or press the spacebar) to place the block</div><div class="game-over"><h2>Game Over</h2><p>You did great, you're the best.</p><p>Click or spacebar to start again</p></div><div class="game-ready"><div id="start-button">Start</div><div></div></div></div><script src="main.js"></script><script src="three.min.js"></script><script src="TweenMax.min.js"></script><script id="rendered-js">"use strict";
       console.clear();
       var Stage = /** @class */ (function () {
         function Stage() {
@@ -631,8 +590,4 @@
         };
         return Game;
       })();
-      var game = new Game();
-    </script>
-    <script type="application/javascript" src="/js/main.js"></script>
-  </body>
-</html>
+      var game = new Game();</script><script type="application/javascript" src="/js/main.js"></script></body></html>

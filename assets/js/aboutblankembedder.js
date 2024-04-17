@@ -11,7 +11,7 @@ if (url) {
         window.innerWidth +
         ",height=" +
         window.innerHeight +
-        ",menubar=no,toolbar=no,location=no,status=no,resizable=no";
+        ",menubar=no,toolbar=no,location=no,status=no";
       win = window.open("", "_blank", features);
       win.document.body.style.margin = "0";
       win.document.body.style.height = "100%";

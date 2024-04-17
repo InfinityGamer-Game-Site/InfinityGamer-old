@@ -1,56 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Sandboxels | 3kh0</title>
-    <meta name="description" content="A falling sand simulation game, with heat transfer, electricity, density, fire, explosions, and more." />
-    <meta name="keywords" content="falling sand, elements, pixel art, simulator, powder" />
-    <meta name="author" content="R74n" />
-    <meta name="copyright" content="R74n" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="all" />
-
-    <!--Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png%3Fv=2" />
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png%3Fv=2" />
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png%3Fv=2" />
-    <link rel="manifest" href="manifest.json" />
-    <link rel="mask-icon" href="icons/safari-pinned-tab.svg%3Fv=2" color="#2167ff" />
-    <link rel="shortcut icon" href="icons/favicon.ico%3Fv=2" />
-    <meta name="msapplication-TileColor" content="#e6d577" />
-    <meta name="theme-color" content="#000000" />
-
-    <!--OpenGraph-->
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Sandboxels" />
-    <meta property="og:description" content="A falling sand simulation game, with heat transfer, electricity, density, fire, explosions, and more." />
-    <meta property="og:url" content="https://sandboxels.r74n.com" />
-    <meta property="og:site_name" content="Sandboxels" />
-    <meta property="og:image" content="https://sandboxels.r74n.com/icons/wallpaper.png" />
-    <meta property="og:image:width" content="1980" />
-    <meta property="og:image:height" content="971" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:alt" content="A rainforest made in Sandboxels" />
-
-    <!--Twitter-->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:description" content="A falling sand simulation game, with heat transfer, electricity, density, fire, explosions, and more." />
-    <meta name="twitter:title" content="Sandboxels" />
-    <meta name="twitter:site:id" content="1436857621827530753" />
-    <meta name="twitter:image" content="https://sandboxels.r74n.com/icons/card.png" />
-    <meta name="twitter:image:alt" content="A rainforest made in Sandboxels" />
-    <meta name="twitter:creator:id" content="1436857621827530753" />
-
-    <style>
-      .setting-span {
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Sandboxels | 3kh0</title><meta name="description" content="A falling sand simulation game, with heat transfer, electricity, density, fire, explosions, and more."><meta name="keywords" content="falling sand, elements, pixel art, simulator, powder"><meta name="author" content="R74n"><meta name="copyright" content="R74n"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="all"><link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png%3Fv=2"><link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png%3Fv=2"><link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png%3Fv=2"><link rel="manifest" href="manifest.json"><link rel="mask-icon" href="icons/safari-pinned-tab.svg%3Fv=2" color="#2167ff"><link rel="shortcut icon" href="icons/favicon.ico%3Fv=2"><meta name="msapplication-TileColor" content="#e6d577"><meta name="theme-color" content="#000000"><meta property="og:locale" content="en_US"><meta property="og:type" content="website"><meta property="og:title" content="Sandboxels"><meta property="og:description" content="A falling sand simulation game, with heat transfer, electricity, density, fire, explosions, and more."><meta property="og:url" content="https://sandboxels.r74n.com"><meta property="og:site_name" content="Sandboxels"><meta property="og:image" content="https://sandboxels.r74n.com/icons/wallpaper.png"><meta property="og:image:width" content="1980"><meta property="og:image:height" content="971"><meta property="og:image:type" content="image/png"><meta property="og:image:alt" content="A rainforest made in Sandboxels"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:description" content="A falling sand simulation game, with heat transfer, electricity, density, fire, explosions, and more."><meta name="twitter:title" content="Sandboxels"><meta name="twitter:site:id" content="1436857621827530753"><meta name="twitter:image" content="https://sandboxels.r74n.com/icons/card.png"><meta name="twitter:image:alt" content="A rainforest made in Sandboxels"><meta name="twitter:creator:id" content="1436857621827530753"><style>.setting-span {
         display: block;
         padding-bottom: 0.5em;
-      }
-    </style>
-    <!-- Schema -->
-    <script type="application/ld+json">
-      {
+      }</style><script type="application/ld+json">{
         "@context": "https://schema.org",
         "@type": ["VideoGame", "MobileApplication", "WebApplication"],
         "gamePlatform": "Web Browser",
@@ -75,12 +26,7 @@
         "softwareRequirements": "HTML5",
         "archivedAt": "https://web.archive.org/web/20211230010640000/https://sandboxels.r74n.com/",
         "copyrightYear": 2022
-      }
-    </script>
-
-    <script src="https://R74n.com/load.js"></script>
-    <script>
-      // replaceAll polyfill
+      }</script><script src="https://R74n.com/load.js"></script><script>// replaceAll polyfill
       if (!String.prototype.replaceAll) {
         String.prototype.replaceAll = function (str, newStr) {
           if (Object.prototype.toString.call(str).toLowerCase() === "[object regexp]") {
@@ -100,11 +46,7 @@
             wscript.SendKeys("{F11}");
           }
         }
-      }
-    </script>
-
-    <script>
-      // Mod Loader
+      }</script><script>// Mod Loader
       runAfterLoadList = [];
       // runAfterLoad() takes a function and adds it to the runAfterLoadList.
       function runAfterLoad(func) {
@@ -124,11 +66,7 @@
           console.log("Error in mod: " + enabledMods[i]);
           console.log(e);
         }
-      }
-    </script>
-
-    <script>
-      // If settings is in localStorage, load it. If not, create an empty object.
+      }</script><script>// If settings is in localStorage, load it. If not, create an empty object.
       settings = localStorage.getItem("settings") ? JSON.parse(localStorage.getItem("settings")) : {};
       if (!settings["unlocked"]) {
         settings["unlocked"] = {};
@@ -10208,183 +10146,8 @@
         var firstDiv = document.getElementsByClassName("category")[0];
         var firstElementButton = firstDiv.getElementsByClassName("elementButton")[0];
         selectElement(firstElementButton.getAttribute("element"));
-      };
-    </script>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-
-  <body>
-    <h1 class="pagetitle" id="pagetitle"></h1>
-    <div id="gameDiv">
-      <div id="canvasDiv">
-        <canvas id="game" width="800" height="600">
-          Your browser does not support the HTML5 canvas tag.<br />
-          Please update your browser to the latest version.<br />
-          <a href="https://www.google.com/chrome/" tabindex="-1">Chrome</a> 4.0+<br />
-          <a href="https://www.mozilla.org/firefox/new/" tabindex="-1">Firefox</a> 2.0+<br />
-          <a href="http://www.apple.com/safari/" tabindex="-1">Safari</a> 3.1+<br />
-          <br />
-          <a href="http://www.opera.com/" tabindex="-1">Opera</a> 9.0+<br />
-          <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx" tabindex="-1">Internet Explorer</a> 9.0+<br />
-        </canvas>
-        <input
-          id="colorSelector"
-          type="color"
-          value="#ff0000"
-          onchange="currentColor=this.value;
+      };</script><link rel="stylesheet" type="text/css" href="style.css"></head><body><h1 class="pagetitle" id="pagetitle"></h1><div id="gameDiv"><div id="canvasDiv"><canvas id="game" width="800" height="600">Your browser does not support the HTML5 canvas tag.<br>Please update your browser to the latest version.<br><a href="https://www.google.com/chrome/" tabindex="-1">Chrome</a> 4.0+<br><a href="https://www.mozilla.org/firefox/new/" tabindex="-1">Firefox</a> 2.0+<br><a href="http://www.apple.com/safari/" tabindex="-1">Safari</a> 3.1+<br><br><a href="http://www.opera.com/" tabindex="-1">Opera</a> 9.0+<br><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx" tabindex="-1">Internet Explorer</a> 9.0+<br></canvas><input id="colorSelector" type="color" value="#ff0000" onchange="currentColor=this.value;
             document.getElementById('elementButton-'+currentElement).style.removeProperty('background-image');
-            document.getElementById('elementButton-'+currentElement).style.background = currentColor;"
-          oninput="currentColor=this.value;
+            document.getElementById('elementButton-'+currentElement).style.background = currentColor;" oninput="currentColor=this.value;
             document.getElementById('elementButton-'+currentElement).style.removeProperty('background-image');
-            document.getElementById('elementButton-'+currentElement).style.background = currentColor;"
-        />
-      </div>
-      <div id="underDiv">
-        <div id="stats"></div>
-        <div id="controls">
-          <div id="toolControls">
-            <button id="pauseButton" title="Pause/play the simulation" class="controlButton" onclick="togglePause();focusGame();" on="false">Pause</button>
-            <button id="frameButton" title="Pause and play one frame" class="controlButton" onclick="doFrame();focusGame();" on="false">Step</button>
-            <button id="sizeDownButton" title="Decrease the brush size" class="controlButton" onclick="mouseSize -= 2;if (mouseSize < 1) { mouseSize = 1; };focusGame();">-</button>
-            <button id="sizeUpButton" title="Increase the brush size" class="controlButton" onclick="mouseSize += 2;if (mouseSize > (height > width ? height : width)) { mouseSize = (height > width ? height : width); };focusGame();">
-              +
-            </button>
-            <button id="resetButton" title="Clear the entire scene" class="controlButton" onclick="if (confirm('Are you sure you want to clear the whole scene?')) {clearAll();};focusGame();">Reset</button>
-            <button
-              id="replaceButton"
-              title="Override existing pixels when placing"
-              class="controlButton"
-              onclick='if (mode == "replace") {mode = null;this.setAttribute("on","false");}else {mode = "replace";this.setAttribute("on","true");};focusGame();'
-              on="false"
-            >
-              Replace
-            </button>
-            <button id="elemSelectButton" title="Select an element by name" class="controlButton" onclick="chooseElementPrompt();focusGame();">E</button>
-            <button
-              id="tpsButton"
-              title="Change the simulation Ticks Per Second (TPS)"
-              class="controlButton"
-              onclick='var newtps = parseInt(prompt("Enter the new simulation Ticks Per Second (TPS). This is how many updates per second the simulation will run.\n\nThe default is 30.\n\nThe current TPS is " + tps + "."));if (newtps !== null) {if (isNaN(newtps) || newtps == "" || newtps == "0") {alert("You did not enter a valid TPS.");}else if (newtps > 1000) {alert("You entered a TPS that is too high. The TPS will be set to the maximum, 1000.");tps = 1000;}else {tps = parseInt(newtps);if (isNaN(tps)) {alert("You did not enter a valid TPS.");tps = 30;}}resetInterval(tps);}focusGame();'
-            >
-              Tps
-            </button>
-            <!--<button id="hideButton" title="Stops updating the scene to allow more resources towards simulation" class="controlButton" onclick='if (hiding) {hiding = false;this.setAttribute("on","false");}else {hiding = true;this.setAttribute("on","true");};focusGame();' on="false">Hide</button>-->
-            <button id="infoButton" title="Brings up the element info screen" class="controlButton" onclick='if (showingMenu!="info"){closeMenu();showInfo("")}else{closeMenu()};' on="false">Info</button>
-            <button id="modsButton" title="Brings up the Mod Manager" class="controlButton" onclick='if (showingMenu!="mods"){closeMenu();showModManager()}else{closeMenu()};' on="false">Mods</button>
-            <button id="settingsButton" title="Brings up the settings screen" class="controlButton" onclick='if (showingMenu!="settings"){closeMenu();showSettings()}else{closeMenu()};' on="false">Settings</button>
-          </div>
-          <div id="category-tools" category="tools" style="display: block;"></div>
-          <div id="categoryControls"></div>
-          <div id="elementControls"></div>
-        </div>
-        <div id="extraInfo">
-          <small>
-            <a href="controls.txt" target="_blank">Controls</a> • <a href="changelog.txt" target="_blank">Changelog</a> •
-            <a href="https://docs.google.com/document/d/1R8xljj_J-K5oU-9y4louwplQmM-ZBvUfXmhbgj5LYdk/edit?usp=sharing" target="_blank">Feedback</a> •
-            <a href="https://discord.gg/ejUc6YPQuS" target="_blank" style="text-shadow: 0px 2px 10px #ff00ff;">Discord</a>
-          </small>
-        </div>
-      </div>
-    </div>
-
-    <div id="infoParent">
-      <div id="infoScreen">
-        <!--Element Info Page-->
-        <button class="XButton" onclick="closeMenu();">-</button>
-        <span class="infoLink noselect" id="infoBackButton" onclick="infoBack()" style="text-decoration: none !important; display: none;">←&nbsp;</span><span class="menuTitle" id="infoTitle">Title</span>
-        <div class="menuText" id="infoText">Text</div>
-      </div>
-      <input type="text" id="infoSearch" placeholder="Element..." oninput="showInfo(this.value);" />
-    </div>
-
-    <!--Mod Manager Page with the list of current mods and a url input box with a plus button to add it-->
-    <div id="modParent">
-      <div id="modManager">
-        <button class="XButton" onclick="closeMenu();">-</button>
-        <span class="menuTitle">Enabled Mods</span>
-        <ul class="menuText" id="modManagerList"></ul>
-        <span id="noMods" style="display: none;">
-          You have no mods enabled.<br />
-          <br />
-        </span>
-        See the <a href="https://docs.google.com/document/d/1YWPLKEvGeaaLuYWzObCyLK2Y09JPZgF1ODQQCbU3Sng/edit?usp=sharing" target="_blank">Mod List</a>. <br />
-        <br />
-        <br />
-        <br />
-        <!-- Link to the Google Doc that floats at the bottom -->
-        <!--If the key is Enter, addMod -->
-      </div>
-      <input type="text" id="modManagerUrl" placeholder=".JS URL..." onkeydown="if (event.keyCode == 13) {addMod(this.value);this.value = '';};this.focus();" />
-      <!-- <button id="modManagerAdd" onclick="addMod(document.getElementById('modManagerUrl').value); document.getElementById('modManagerUrl').value = '';">+</button> -->
-    </div>
-
-    <!--Settings Menu-->
-    <div id="settingsParent">
-      <div id="settingsMenu">
-        <button class="XButton" onclick="closeMenu();">-</button>
-        <span class="menuTitle">Settings</span>
-        <div class="menuText" style="padding-top: 1em;">
-          <span setting="units" class="setting-span">
-            Units
-            <select onchange="setSetting('units',this.value);">
-              <option value="m" selected>Metric</option>
-              <option value="i">Imperial</option>
-              <option value="s">SI</option>
-            </select>
-          </span>
-          <span setting="unhide" class="setting-span">
-            Hiding
-            <select onchange="setSetting('unhide',parseInt(this.value));this.nextElementSibling.innerText='Refresh.'">
-              <option value="0" selected>Hide Some Elements</option>
-              <option value="1">Unhide All Elements</option>
-              <option value="2">Unlock as Discovered</option>
-            </select>
-            <a onclick="window.location.reload();" style="font-style: italic; cursor: pointer;"></a>
-          </span>
-          <span setting="bg" class="setting-span"> Background <input onchange="setSetting('bg',this.value);" oninput="setSetting('bg',this.value);" type="color" value="#000000" /> </span>
-          <span setting="stain" class="setting-span">
-            Staining
-            <select onchange="setSetting('stainoff',parseInt(this.value));">
-              <option value="0" selected>Enabled</option>
-              <option value="1">Disabled</option>
-            </select>
-          </span>
-          <span setting="clouds" class="setting-span">
-            Clouds
-            <select onchange="setSetting('clouds',parseInt(this.value));">
-              <option value="1" selected>Enabled</option>
-              <option value="0">Disabled</option>
-            </select>
-          </span>
-          <span setting="events" class="setting-span">
-            Random Events
-            <select onchange="setSetting('events',parseFloat(this.value));">
-              <option value="0" selected>Disabled</option>
-              <option value="0.005">Rare (Recommended for casual play)</option>
-              <option value="0.025">Common</option>
-              <option value="0.05">Annoying</option>
-              <option value="0.25">Overdrive (DANGEROUS)</option>
-            </select>
-          </span>
-          <span class="setting-span">
-            <button onclick="if(confirm('This action will reset all discovered elements and refresh the page.')){settings.unlocked={};saveSettings();location.reload()}" class="settingsButton">Reset Discovered</button>
-            <button onclick="if(confirm('This action will reset all game data and refresh the page.')){localStorage.removeItem('settings');location.reload()}" class="settingsButton">Reset All</button>
-            <button onclick="if(confirm('This action will disable all enabled mods and refresh the page.')){localStorage.removeItem('enabledMods');location.reload()}" class="settingsButton">Clear Mods</button>
-          </span>
-          <span setting="worldgen" style="padding-bottom: 0;" class="setting-span">
-            World Gen [Beta]
-            <select id="worldgenselect" onchange="setSetting('worldgen',this.value);this.nextElementSibling.innerText='Reset.'">
-              <option value="off" selected>Disabled</option>
-            </select>
-            <span onclick="clearAll();" style="font-style: italic; cursor: pointer;"></span>
-          </span>
-        </div>
-        <br />
-        <br />
-        <br />
-        <br />
-      </div>
-    </div>
-    <script src="/js/main.js"></script>
-  </body>
-</html>
+            document.getElementById('elementButton-'+currentElement).style.background = currentColor;"></div><div id="underDiv"><div id="stats"></div><div id="controls"><div id="toolControls"><button id="pauseButton" title="Pause/play the simulation" class="controlButton" onclick="togglePause();focusGame();" on="false">Pause</button> <button id="frameButton" title="Pause and play one frame" class="controlButton" onclick="doFrame();focusGame();" on="false">Step</button> <button id="sizeDownButton" title="Decrease the brush size" class="controlButton" onclick="mouseSize -= 2;if (mouseSize < 1) { mouseSize = 1; };focusGame();">-</button> <button id="sizeUpButton" title="Increase the brush size" class="controlButton" onclick="mouseSize += 2;if (mouseSize > (height > width ? height : width)) { mouseSize = (height > width ? height : width); };focusGame();">+</button> <button id="resetButton" title="Clear the entire scene" class="controlButton" onclick="if (confirm('Are you sure you want to clear the whole scene?')) {clearAll();};focusGame();">Reset</button> <button id="replaceButton" title="Override existing pixels when placing" class="controlButton" onclick='if (mode == "replace") {mode = null;this.setAttribute("on","false");}else {mode = "replace";this.setAttribute("on","true");};focusGame();' on="false">Replace</button> <button id="elemSelectButton" title="Select an element by name" class="controlButton" onclick="chooseElementPrompt();focusGame();">E</button> <button id="tpsButton" title="Change the simulation Ticks Per Second (TPS)" class="controlButton" onclick='var newtps = parseInt(prompt("Enter the new simulation Ticks Per Second (TPS). This is how many updates per second the simulation will run.\n\nThe default is 30.\n\nThe current TPS is " + tps + "."));if (newtps !== null) {if (isNaN(newtps) || newtps == "" || newtps == "0") {alert("You did not enter a valid TPS.");}else if (newtps > 1000) {alert("You entered a TPS that is too high. The TPS will be set to the maximum, 1000.");tps = 1000;}else {tps = parseInt(newtps);if (isNaN(tps)) {alert("You did not enter a valid TPS.");tps = 30;}}resetInterval(tps);}focusGame();'>Tps</button> <button id="infoButton" title="Brings up the element info screen" class="controlButton" onclick='if (showingMenu!="info"){closeMenu();showInfo("")}else{closeMenu()};' on="false">Info</button> <button id="modsButton" title="Brings up the Mod Manager" class="controlButton" onclick='if (showingMenu!="mods"){closeMenu();showModManager()}else{closeMenu()};' on="false">Mods</button> <button id="settingsButton" title="Brings up the settings screen" class="controlButton" onclick='if (showingMenu!="settings"){closeMenu();showSettings()}else{closeMenu()};' on="false">Settings</button></div><div id="category-tools" category="tools" style="display: block;"></div><div id="categoryControls"></div><div id="elementControls"></div></div><div id="extraInfo"><small><a href="controls.txt" target="_blank">Controls</a> • <a href="changelog.txt" target="_blank">Changelog</a> • <a href="https://docs.google.com/document/d/1R8xljj_J-K5oU-9y4louwplQmM-ZBvUfXmhbgj5LYdk/edit?usp=sharing" target="_blank">Feedback</a> • <a href="https://discord.gg/ejUc6YPQuS" target="_blank" style="text-shadow: 0px 2px 10px #ff00ff;">Discord</a></small></div></div></div><div id="infoParent"><div id="infoScreen"><button class="XButton" onclick="closeMenu();">-</button> <span class="infoLink noselect" id="infoBackButton" onclick="infoBack()" style="text-decoration: none !important; display: none;">←&nbsp;</span><span class="menuTitle" id="infoTitle">Title</span><div class="menuText" id="infoText">Text</div></div><input type="text" id="infoSearch" placeholder="Element..." oninput="showInfo(this.value);"></div><div id="modParent"><div id="modManager"><button class="XButton" onclick="closeMenu();">-</button> <span class="menuTitle">Enabled Mods</span><ul class="menuText" id="modManagerList"></ul><span id="noMods" style="display: none;">You have no mods enabled.<br><br></span>See the <a href="https://docs.google.com/document/d/1YWPLKEvGeaaLuYWzObCyLK2Y09JPZgF1ODQQCbU3Sng/edit?usp=sharing" target="_blank">Mod List</a>.<br><br><br><br></div><input type="text" id="modManagerUrl" placeholder=".JS URL..." onkeydown="if (event.keyCode == 13) {addMod(this.value);this.value = '';};this.focus();"></div><div id="settingsParent"><div id="settingsMenu"><button class="XButton" onclick="closeMenu();">-</button> <span class="menuTitle">Settings</span><div class="menuText" style="padding-top: 1em;"><span setting="units" class="setting-span">Units <select onchange="setSetting('units',this.value);"><option value="m" selected="selected">Metric</option><option value="i">Imperial</option><option value="s">SI</option></select> </span><span setting="unhide" class="setting-span">Hiding <select onchange="setSetting('unhide',parseInt(this.value));this.nextElementSibling.innerText='Refresh.'"><option value="0" selected="selected">Hide Some Elements</option><option value="1">Unhide All Elements</option><option value="2">Unlock as Discovered</option></select> <a onclick="window.location.reload();" style="font-style: italic; cursor: pointer;"></a> </span><span setting="bg" class="setting-span">Background <input onchange="setSetting('bg',this.value);" oninput="setSetting('bg',this.value);" type="color" value="#000000"> </span><span setting="stain" class="setting-span">Staining <select onchange="setSetting('stainoff',parseInt(this.value));"><option value="0" selected="selected">Enabled</option><option value="1">Disabled</option></select> </span><span setting="clouds" class="setting-span">Clouds <select onchange="setSetting('clouds',parseInt(this.value));"><option value="1" selected="selected">Enabled</option><option value="0">Disabled</option></select> </span><span setting="events" class="setting-span">Random Events <select onchange="setSetting('events',parseFloat(this.value));"><option value="0" selected="selected">Disabled</option><option value="0.005">Rare (Recommended for casual play)</option><option value="0.025">Common</option><option value="0.05">Annoying</option><option value="0.25">Overdrive (DANGEROUS)</option></select> </span><span class="setting-span"><button onclick="if(confirm('This action will reset all discovered elements and refresh the page.')){settings.unlocked={};saveSettings();location.reload()}" class="settingsButton">Reset Discovered</button> <button onclick="if(confirm('This action will reset all game data and refresh the page.')){localStorage.removeItem('settings');location.reload()}" class="settingsButton">Reset All</button> <button onclick="if(confirm('This action will disable all enabled mods and refresh the page.')){localStorage.removeItem('enabledMods');location.reload()}" class="settingsButton">Clear Mods</button> </span><span setting="worldgen" style="padding-bottom: 0;" class="setting-span">World Gen [Beta] <select id="worldgenselect" onchange="setSetting('worldgen',this.value);this.nextElementSibling.innerText='Reset.'"><option value="off" selected="selected">Disabled</option></select> <span onclick="clearAll();" style="font-style: italic; cursor: pointer;"></span></span></div><br><br><br><br></div></div><script src="/js/main.js"></script></body></html>
