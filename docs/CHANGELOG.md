@@ -145,7 +145,7 @@ Added some new features for unblocking
 - Added 667 new proxies
 - Added temperature and weather to clock pages
 
-## v1.6.1 - Development changes
+### v1.6.1 - Development changes
 
 Small developmental changes that users won't notice
 4/17/24
@@ -156,4 +156,11 @@ Small developmental changes that users won't notice
 - Added sitemap.xml
 - Made it so updates have short descriptions
 - Minified a lot of the game files
-- Accidentally deleted Fruit Ninja, will restore later
+- Accidentally deleted Fruit Ninja and EmulatorJS, will restore later
+
+#### v1.6.1.1 - EmulatorJS replace
+
+Accidentally replaced some of the files with EmulatorJS files
+4/17/24
+
+- Fixed accidentally EmulatorJS replaced files
