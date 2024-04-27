@@ -1,0 +1,14 @@
+{
+    "workbench.colorTheme": "Default Dark Modern",
+    "explorer.confirmPasteNative": false,
+    "explorer.confirmDragAndDrop": false,
+    "chatgpt.lang": "en",
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".scss.min.css",
+            "savePath": "/assets/css",
+            "savePathReplacementPairs": null
+        }
+    ]
+}

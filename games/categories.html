@@ -15,15 +15,21 @@
 
     <title>InfinityGamer</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/global.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/categories.css">
   </head>
   <body>
     <iframe src="../navbar.html" frameborder="0" scrolling="no" width="100%" height="100px"></iframe>
     <h1>Game Categories</h1>
-    <a href="index.html?c=papas"><img src="../assets/images/categories/papas.png" style="width: 200px; height: auto; margin: 10px;"/></a>
-    <a href="index.html?c=minecraft"><img src="../assets/images/categories/minecraft.png" style="width: 200px; height: auto; margin: 10px;"/></a>
-    <a href="index.html?c=twentyfortyeight"><img src="../assets/images/categories/2048.png" style="width: 200px; height: auto; margin: 10px;"/></a>
-    <a href="index.html?c=mario"><img src="../assets/images/categories/mario.png" style="width: 200px; height: auto; margin: 10px;"/></a>
+    <div id="wrapper">
+    <button data-category="papas"></button>
+    <button data-category="minecraft"></button>
+    <button data-category="2048"></button>
+    <button data-category="mario"></button>
+    <button data-category="idle"></button>
+    <button data-category="cars"></button>
+  </div>
 
     <script src="../assets/js/global.js"></script>
+    <script src="../assets/js/games/categories.js"></script>
   </body>
 </html>

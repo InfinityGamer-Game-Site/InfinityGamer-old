@@ -26,15 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (savedTitle) {
       changeTitle(savedTitle);
   }
-});
 
-function changeTitle(title) {
-  document.title = title;
-}
-
-
-
-document.addEventListener("DOMContentLoaded", function() {
   var storedFont = localStorage.getItem('selectedFont');
   if (storedFont) {
     document.body.style.fontFamily = storedFont;
@@ -53,3 +45,14 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+function changeTitle(title) {
+  document.title = title;
+}
+
+function redirect(link){
+  if (window.top.location.href !== "about:blank"){
+    window.top.location.href = link;
+  } else {
+    window.parent.location.href = link;
+  }
+}
