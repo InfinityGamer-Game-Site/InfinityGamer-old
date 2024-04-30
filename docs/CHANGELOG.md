@@ -191,18 +191,14 @@ Giant update, full of new games, CSS changes, game images, and more
 
 - Changed the game display page CSS
 - Added game images
-- Renamed 8ball-billards-classic to 8ball-billiards-classic, chromaincident to chroma-incident, endlesswar3 to endless-war-3, Papas Pizzaria to Papas Pizzeria, scrapmetal to scrap-metal-3, smokingbarrels to smokin-barrels, snowbattle to snow-battle-io, and tactical-assasin to tactical-assassin
+- Renamed 8ball-billards-classic to 8ball-billiards-classic, chromaincident to chroma-incident, endlesswar3 to endless-war-3, Papas Pizzaria to Papas Pizzeria, scrapmetal to scrap-metal-3, smokingbarrels to smokin-barrels, snowbattle to snow-battle-io, tactical-assasin to tactical-assassin, added a slightly better version of Stickman Hook, and renamed it as Stickman Hook (was just Stickman), deleted duplicate Death Run 3D (under death-run), Chrome Dino (under dino), Doge Miner (under doge-mining-simulator), Fireboy and Watergirl (under fireboy-and-watergirl-forest-temple), Particle Clicker (under particleclicker), Google Snake (under snake), Mario (under super-mario-maker-online), deleted Double Wires because it doesn't work, deleted Dungeon Craft because it never loads, deleted broken Elastic Man and renamed the duplicate working version (elastic-face) to Elastic Man, Renamed Gopher to Gopher Kart, Grey Box to Grey Box Testing, Icys Purple Head to Icy Purple Head 2, Idle Shark to Shark Game, Justfall to Justfall Lol, Shadow World Adventure to Shadoworld Adventure, Slither Snake to Snake, Winter Falling Price to Winter Falling Price of Life, Wolf3D to Wolfenstein 3D, and deleted Fake Virus and TV Static, because they aren't even games
 - Made categories page look better
 - Added new categories for cars and idle games
 - Added reload game button in game display page
 - Added a "fullscreen needed to play" list of games
 - Added the surf game from Microsoft Edge, Basket Random, Volley Random, Soccer Random, and Top Speed Racing 2D
-- Added a slightly better version of Stickman Hook, and renamed it as Stickman Hook (was just Stickman)
-- Deleted duplicate Death Run 3D (under death-run), Chrome Dino (under dino), Doge Miner (under doge-mining-simulator), Fireboy and Watergirl (under fireboy-and-watergirl-forest-temple), Particle Clicker (under particleclicker), Google Snake (under snake), and Mario (under super-mario-maker-online)
 - Updated Don't Drop the White Ball 2's index.htm to an html extension
 - Learned .htaccess is only for Apache web servers, changed it to _redirects
-- Deleted Double Wires because it doesn't work, and Dungeon Craft because it never loads
-- Deleted broken Elastic Man, and renamed the duplicate working version (elastic-face) to Elastic Man
 - Seperated the game names from games.js to gameNames.js
 - Deleted EmulatorJS and Fruit Ninja from gameNames.js temporarily, until I readd them.
 - Removed "Created by ChatGPT" comment at end of games.js, because I have coded more of it now
@@ -210,10 +206,11 @@ Giant update, full of new games, CSS changes, game images, and more
 - Added compact and loose view for game list
 - Combined random-text.js and aboutblankembedder.js into index.js
 - Added localStorage warning on first site visit
-- Deleted Fake Virus and TV Static, because they aren't even games
-- Renamed Gopher to Gopher Kart, Grey Box to Grey Box Testing, Icys Purple Head to Icy Purple Head 2, Idle Shark to Shark Game, Justfall to Justfall Lol, Shadow World Adventure to Shadoworld Adventure, Slither Snake to Snake, Winter Falling Price to Winter Falling Price of Life, and Wolf3D to Wolfenstein 3D
 - Improved game-box CSS hover effects
 - Removed broken games: all of the The Impossible Quizzes, Jetpack, Path Finder, Pizzeria Simulator, Shift Flash 2, and Stick Climb
 - Added info about the site on index.html
 - Switched to SCSS for themes
 - Minor code optimization and sorting changes
+- Made easter egg page coole
+- Added 10 new themes and 2 new fonts
+- Made it so not all the fonts load, just the one selected

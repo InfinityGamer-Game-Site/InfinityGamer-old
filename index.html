@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
+<head>
     <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png?v=2">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png?v=2">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png?v=2">
@@ -16,29 +16,51 @@
     <title>InfinityGamer</title>
     <link rel="stylesheet" type="text/css" href="assets/css/global.css">
     <link rel="stylesheet" type="text/css" href="assets/css/index.css">
-  </head>
-  <body>
-    <iframe src="navbar.html" frameborder="0" scrolling="no" width="100%" height="100px"></iframe>
-    <h1>InfinityGamer</h1>
-    <div class="container">
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+  <iframe src="navbar.html" frameborder="0" scrolling="no" width="100%" height="100px"></iframe>
+  <h1>InfinityGamer</h1>
+  <div class="container">
       <p id="random-text">Loading...</p>
-    </div>
+  </div>
 
-    <img src="assets/images/Infinity/Infinity_normal-transparent.svg" alt="InfinityGamer Logo" width="100px" height="auto"/>
-    <br><br><br>
-    <button id="embed-button" style="width: 300px; height: 50px;">Open in about:blank window</button>
-    <p style="line-height: 200%; letter-spacing: 200%;"><b>Welcome to InfinityGamer!
-    Dive into a vast collection of over 380 games.</b> Whether you like action, adventure, puzzles, or strategy, you'll find something to enjoy here.
-    <b>Tired of being blocked?</b> Access your favorite content hassle-free with our proxy unblocker viewer, offering a selection of over 700 proxies for seamless browsing.
-    <b>Are you ready to leave your class?</b> Use our clock page, with cool animated backgrounds, so you can count down until you leave your least favorite class.
-    <b>Worried your school will block this site?</b> We have multiple alternate links to ensure uninterrupted gaming, even if the site is blocked.
-    <b>Have a suggestion or want to request a new feature?</b> Tell us! Go to our feedback page and share your thoughts to help us improve InfinityGamer.
-    <b>Customize your gaming experience with our settings page!</b> You can choose from 16 themes, select your preferred font, and cloak your tabs for added privacy.
-    <b>We're always updating and refining InfinityGamer to provide you with the best gaming and browsing experiences.
-    Join us at InfinityGamer and let the adventure begin!</b></p>
+  <img src="assets/images/Infinity/Infinity_normal-transparent.svg" alt="InfinityGamer Logo" width="100px"
+       height="auto"/>
+  <br><br><br>
+  <button id="embed-button" style="width: 300px; height: 50px;">Open in about:blank</button>
+  <br>
+  <p style="line-height: 200%; letter-spacing: 200%;"><b>Welcome to InfinityGamer!
+      Dive into a vast collection of over 380 games.</b> Whether you like action, adventure, puzzles, or strategy,
+      you'll find something to enjoy here.
+      <b>Tired of being blocked?</b> Access your favorite content hassle-free with our proxy unblocker viewer, offering
+      a selection of over 700 proxies for seamless browsing.
+      <b>Are you ready to leave your class?</b> Use our clock page, with cool animated backgrounds, so you can count
+      down until you leave your least favorite class.
+      <b>Worried your school will block this site?</b> We have multiple alternate links to ensure uninterrupted
+      gaming, even if the site is blocked.
+      <b>Have a suggestion or want to request a new feature?</b> Tell us! Go to our feedback page and share your
+      thoughts to help us improve InfinityGamer.
+      <b>Customize your gaming experience with our settings page!</b> You can choose from 16 themes, select your
+      preferred font, and cloak your tabs for added privacy.
+      <b>We're always updating and refining InfinityGamer to provide you with the best gaming and browsing
+          experiences.
+          Join us at InfinityGamer and let the adventure begin!</b></p>
 
-
-    <script src="assets/js/index.js"></script>
-    <script src="assets/js/global.js"></script>
-  </body>
+  <script src="assets/js/index.js"></script>
+  <script src="assets/js/global.js"></script>
+  <script>
+      if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+              navigator.serviceWorker.register('/service-worker.js')
+                  .then(registration => {
+                      console.log('Service Worker registered with scope:', registration.scope);
+                  })
+                  .catch(error => {
+                      console.error('Service Worker registration failed:', error);
+                  });
+          });
+      }
+  </script>
+</body>
 </html>

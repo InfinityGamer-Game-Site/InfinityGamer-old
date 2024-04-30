@@ -94,6 +94,88 @@ $color-themes: (
     bgt-color: #3c105380,
     text-color: #f64c72,
     link-color: #2d00f7
+  ),
+  desert: (
+    bg-color: #F4E1C1,
+    bgt-color: #F4E1C180,
+    text-color: #6D5837,
+    link-color: #BF6E48
+  ),
+  arctic: (
+    bg-color: #D6EAF8,
+    bgt-color: #D6EAF880,
+    text-color: #1F618D,
+    link-color: #3498DB
+  ),
+  tropical: (
+    bg-color: #D5F5E3,
+    bgt-color: #D5F5E380,
+    text-color: #196F3D,
+    link-color: #28B463
+  ),
+  pastel: (
+    bg-color: #FADBD8,
+    bgt-color: #FADBD880,
+    text-color: #884EA0,
+    link-color: #AF7AC5
+  ),
+  urban: (
+    bg-color: #34495E,
+    bgt-color: #34495E80,
+    text-color: #ECF0F1,
+    link-color: #E74C3C
+  ),
+  vintage: (
+    bg-color: #FAE5D3,
+    bgt-color: #FAE5D380,
+    text-color: #7D6608,
+    link-color: #D4AC0D
+  ),
+  futuristic: (
+    bg-color: #151719,
+    bgt-color: #E5E7E980,
+    text-color: #5C7E90,
+    link-color: #2980B9
+  ),
+  candy: (
+    bg-color: #FDEDEC,
+    bgt-color: #FDEDEC80,
+    text-color: #6E2C00,
+    link-color: #E74C3C
+  ),
+  rainbow: (
+    bg-color: linear-gradient(90deg, 
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 10%,
+    rgba(208, 222, 33, 1) 20%,
+    rgba(79, 220, 74, 1) 30%,
+    rgba(63, 218, 216, 1) 40%,
+    rgba(47, 201, 226, 1) 50%,
+    rgba(28, 127, 238, 1) 60%,
+    rgba(95, 21, 242, 1) 70%,
+    rgba(186, 12, 248, 1) 80%,
+    rgba(251, 7, 217, 1) 90%,
+    rgba(255, 0, 0, 1) 100%),
+    bgt-color: linear-gradient(90deg, 
+    rgba(255, 0, 0, 0.5) 0%,
+    rgba(255, 154, 0, 0.5) 10%,
+    rgba(208, 222, 33, 0.5) 20%,
+    rgba(79, 220, 74, 0.5) 30%,
+    rgba(63, 218, 216, 0.5) 40%,
+    rgba(47, 201, 226, 0.5) 50%,
+    rgba(28, 127, 238, 0.5) 60%,
+    rgba(95, 21, 242, 0.5) 70%,
+    rgba(186, 12, 248, 0.5) 80%,
+    rgba(251, 7, 217, 0.5) 90%,
+    rgba(255, 0, 0, 0.5) 100%),
+    text-color: #000000,
+    link-color: #FFFFFF
+  ),
+  gothic: (
+    bg-color: #2C3E50,
+    bgt-color: #2C3E5080,
+    text-color: #ad4644,
+    link-color: #9B59B6
   )
 );
 

@@ -27,22 +27,31 @@ document.addEventListener('DOMContentLoaded', function() {
       changeTitle(savedTitle);
   }
 
-  var storedFont = localStorage.getItem('selectedFont');
-  if (storedFont) {
-    document.body.style.fontFamily = storedFont;
-    const buttons = document.querySelectorAll("button");
-    buttons.forEach(button => {
-      button.style.fontFamily = storedFont;
-    });
-    const gameboxes = document.querySelectorAll("game-box");
-    gameboxes.forEach(button => {
-      gameboxes.style.fontFamily = storedFont;
-    });
-    const inputs = document.querySelectorAll("input");
-    inputs.forEach(button => {
-      inputs.style.fontFamily = storedFont;
-    });
-  }
+  // Get the selected font from localStorage or use a default font
+var storedFont = localStorage.getItem('selectedFont') || 'Orbitron';
+
+// Set the font for the body and specific elements
+document.body.style.fontFamily = storedFont;
+const buttons = document.querySelectorAll("button");
+buttons.forEach(button => {
+    button.style.fontFamily = storedFont;
+});
+const gameboxes = document.querySelectorAll("game-box");
+gameboxes.forEach(gamebox => {
+    gamebox.style.fontFamily = storedFont;
+});
+const inputs = document.querySelectorAll("input");
+inputs.forEach(input => {
+    input.style.fontFamily = storedFont;
+});
+
+// Add the selected font dynamically to the head of the document
+var styleElement = document.createElement('style');
+styleElement.innerHTML = `
+    @import url('https://fonts.googleapis.com/css2?family=${storedFont.replace(/ /g, '+')}&display=swap');
+`;
+document.head.appendChild(styleElement);
+
 });
 
 function changeTitle(title) {
