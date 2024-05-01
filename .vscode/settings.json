@@ -10,5 +10,8 @@
             "savePath": "/assets/css",
             "savePathReplacementPairs": null
         }
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "/games/files/**",
     ]
 }

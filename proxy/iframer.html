@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png?v=2">
+    <link rel="manifest" href="../favicons/site.webmanifest?v=2">
+    <link rel="mask-icon" href="../favicons/safari-pinned-tab.svg?v=2" color="#147cea">
+    <link rel="shortcut icon" href="../favicons/favicon.ico?v=2">
+    <meta name="apple-mobile-web-app-title" content="InfinityLoop">
+    <meta name="application-name" content="InfinityLoop">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-config" content="../favicons/browserconfig.xml?v=2">
+    <meta name="theme-color" content="#101015">
+
+    <title>InfinityGamer</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/global.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/iframer.css">
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+  <iframe src="../navbar.html" frameborder="0" scrolling="no" width="100%" height="100px"></iframe>
+  <p>The iframer will not unblock anything, it is meant to work ALONGSIDE exploits. Some websites may not work with this.</p>
+  <div id="navbar">
+    <input type="text" id="websiteURL">
+    <button id="submitURL" onclick="iframeURLSet()">Load Website</button>
+    
+  </div>
+  <div id="iframe-container">
+    <iframe id="website-iframe" src="" onload="checkRedirect()"></iframe>
+  </div>
+  <script src="../assets/js/iframer.js"></script>
+  <script src="../assets/js/global.js"></script>
+</body>
+</html>

@@ -213,4 +213,7 @@ Giant update, full of new games, CSS changes, game images, and more
 - Minor code optimization and sorting changes
 - Made easter egg page coole
 - Added 10 new themes and 2 new fonts
+- Added basic iframer
 - Made it so not all the fonts load, just the one selected
+- Added view counter
+- Improved README
