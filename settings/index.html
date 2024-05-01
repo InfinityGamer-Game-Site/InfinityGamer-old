@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png?v=2">
+    <link rel="manifest" href="../favicons/site.webmanifest?v=2">
+    <link rel="mask-icon" href="../favicons/safari-pinned-tab.svg?v=2" color="#147cea">
+    <link rel="shortcut icon" href="../favicons/favicon.ico?v=2">
+    <meta name="apple-mobile-web-app-title" content="InfinityLoop">
+    <meta name="application-name" content="InfinityLoop">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-config" content="../favicons/browserconfig.xml?v=2">
+    <meta name="theme-color" content="#101015">
+
+    <title>InfinityGamer</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/global.css">
+  </head>
+  <body>
+    <iframe src="../navbar.html" frameborder="0" scrolling="no" width="100%" height="75px"></iframe>
+    <h1>Settings</h1>
+
+    
+    <div style="outline: 1px solid var(--text-color); padding: 10px;">
+      <h2>Theme</h2>
+      <button onclick="toggleTheme('dark')" style="background: var(--bg-color-dark); color: var(--text-color-dark); outline: 1px solid var(--text-color-dark);">Dark</button>
+      <button onclick="toggleTheme('light')" style="background: var(--bg-color-light); color: var(--text-color-light); outline: 1px solid var(--text-color-light);">Light</button>
+      <button onclick="toggleTheme('oceanic')" style="background: var(--bg-color-oceanic); color: var(--text-color-oceanic); outline: 1px solid var(--text-color-oceanic);">Oceanic</button>
+      <button onclick="toggleTheme('midnight')" style="background: var(--bg-color-midnight); color: var(--text-color-midnight); outline: 1px solid var(--text-color-midnight);">Midnight</button>
+      <button onclick="toggleTheme('bubblegum')" style="background: var(--bg-color-bubblegum); color: var(--text-color-bubblegum); outline: 1px solid var(--text-color-bubblegum);">Bubblegum</button>
+      <button onclick="toggleTheme('gray')" style="background: var(--bg-color-gray); color: var(--text-color-gray); outline: 1px solid var(--text-color-gray);">Gray</button>
+      <button onclick="toggleTheme('neo')" style="background: var(--bg-color-neo); color: var(--text-color-neo); outline: 1px solid var(--text-color-neo);">Neo</button>
+      <button onclick="toggleTheme('forest')" style="background: var(--bg-color-forest); color: var(--text-color-forest); outline: 1px solid var(--text-color-forest);">Forest</button>
+      <button onclick="toggleTheme('winter')" style="background: var(--bg-color-winter); color: var(--text-color-winter); outline: 1px solid var(--text-color-winter);">Winter</button>
+      <button onclick="toggleTheme('spring')" style="background: var(--bg-color-spring); color: var(--text-color-spring); outline: 1px solid var(--text-color-spring);">Spring</button>
+      <button onclick="toggleTheme('summer')" style="background: var(--bg-color-summer); color: var(--text-color-summer); outline: 1px solid var(--text-color-summer);">Summer</button>
+      <button onclick="toggleTheme('fall')" style="background: var(--bg-color-fall); color: var(--text-color-fall); outline: 1px solid var(--text-color-fall);">Fall</button>
+      <button onclick="toggleTheme('mystic')" style="background: var(--bg-color-mystic); color: var(--text-color-mystic); outline: 1px solid var(--text-color-mystic);">Mystic</button>
+      <button onclick="toggleTheme('sunset')" style="background: var(--bg-color-sunset); color: var(--text-color-sunset); outline: 1px solid var(--text-color-sunset);">Sunset</button>
+      <button onclick="toggleTheme('galactic')" style="background: var(--bg-color-galactic); color: var(--text-color-galactic); outline: 1px solid var(--text-color-galactic);">Galactic</button>
+      <button onclick="toggleTheme('enchanted')" style="background: var(--bg-color-enchanted); color: var(--text-color-enchanted); outline: 1px solid var(--text-color-enchanted);">Enchanted</button>
+      <button onclick="toggleTheme('desert')" style="background: var(--bg-color-desert); color: var(--text-color-desert); outline: 1px solid var(--text-color-desert);">Desert</button>
+      <button onclick="toggleTheme('arctic')" style="background: var(--bg-color-arctic); color: var(--text-color-arctic); outline: 1px solid var(--text-color-arctic);">Arctic</button>
+      <button onclick="toggleTheme('tropical')" style="background: var(--bg-color-tropical); color: var(--text-color-tropical); outline: 1px solid var(--text-color-tropical);">Tropical</button>
+      <button onclick="toggleTheme('pastel')" style="background: var(--bg-color-pastel); color: var(--text-color-pastel); outline: 1px solid var(--text-color-pastel);">Pastel</button>
+      <button onclick="toggleTheme('urban')" style="background: var(--bg-color-urban); color: var(--text-color-urban); outline: 1px solid var(--text-color-urban);">Urban</button>
+      <button onclick="toggleTheme('vintage')" style="background: var(--bg-color-vintage); color: var(--text-color-vintage); outline: 1px solid var(--text-color-vintage);">Vintage</button>
+      <button onclick="toggleTheme('futuristic')" style="background: var(--bg-color-futuristic); color: var(--text-color-futuristic); outline: 1px solid var(--text-color-futuristic);">Futuristic</button>
+      <button onclick="toggleTheme('candy')" style="background: var(--bg-color-candy); color: var(--text-color-candy); outline: 1px solid var(--text-color-candy);">Candy</button>
+      <button onclick="toggleTheme('rainbow')" style="background: var(--bg-color-rainbow); color: var(--text-color-rainbow); outline: 1px solid var(--text-color-rainbow);">Rainbow</button>
+      <button onclick="toggleTheme('gothic')" style="background: var(--bg-color-gothic); color: var(--text-color-gothic); outline: 1px solid var(--text-color-gothic);">Gothic</button>
+    </div>
+
+    <br>
+    <div style="outline: 1px solid var(--text-color); padding: 10px;">
+    <h2>Font</h2>
+<select id="fontSelect" style="background: var(--transparent); color: var(--text-color); outline: 1px solid var(--text-color);">
+  <option value="" selected disabled>Select Font</option>
+  <option value="Orbitron">Orbitron (Default)</option>
+  <option value="Open Sans">Open Sans</option>
+  <option value="Arial">Arial</option>
+  <option value="Verdana">Verdana</option>
+  <option value="Times New Roman">Times New Roman</option>
+  <option value="Courier New">Courier New</option>
+  <option value="Comic Neue">Comic Sans</option>
+  <option value="Cookie">Cookie</option>
+  <option value="Montserrat">Montserrat</option>
+</select>
+<button onclick="applyFont()" style="height: 50px;">Apply Font</button>
+</div>
+<br>
+
+    <div style="outline: 1px solid var(--text-color); padding: 10px;">
+
+    <h2>Cloaker</h2>
+
+      <form id="form">
+        <label for="title">Site Title:</label>
+        <input type="text" id="title" placeholder="Enter your title">
+        <button type="submit" style="height: 50px;">Cloak Tab</button>
+      </form>
+
+    </div>
+
+    <button onclick="redirect('changelog.html')" style="height: 50px; width: 200px;">View Changelog</button>
+
+    <script src="../assets/js/global.js"></script>
+    <script src="../assets/js/settings.js"></script>
+  </body>
+</html>

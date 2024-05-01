@@ -21,6 +21,7 @@ nav ul li a {
   padding: 15px 20px;
   text-decoration: none;
   color: var(--text-color);
+  cursor: pointer;
 }
 
 nav ul li a:hover {

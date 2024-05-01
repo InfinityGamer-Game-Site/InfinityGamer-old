@@ -1,6 +1,7 @@
 # v1 - Initial Release
 
 First release of site
+
 3/18/24
 
 - Released the site.
@@ -8,6 +9,7 @@ First release of site
 ## v1.1 - First fixes
 
 First bug fixes and feature changes
+
 3/19/24 - 3/21/24
 
 - Fixed game names and removed duplicates
@@ -21,6 +23,7 @@ First bug fixes and feature changes
 ### v1.1.1 - SM64 Typo
 
 Fixed a small typo in the Super Mario 64 game directory
+
 3/21/24
 
 - Renamed games/files/super-maio-64 to games/files/super-mario-64, which fixed a referencing error
@@ -28,6 +31,7 @@ Fixed a small typo in the Super Mario 64 game directory
 ## v1.2 - Search bar and game display page
 
 Added some new features, like a search bar, and a game display page, and some small bug fixes
+
 3/21/24
 
 - Made a page that displays the games and their title with option to go fullscreen or view the source code.
@@ -41,6 +45,7 @@ Added some new features, like a search bar, and a game display page, and some sm
 ## v1.3 - Categories
 
 Added game categories, and some small changes
+
 3/22/24
 
 - Renamed minecraft games fom starting with mc to start with minecraft
@@ -51,6 +56,7 @@ Added game categories, and some small changes
 ### v1.3.1 - Anti-tab-close
 
 Added a feature so a teacher can't close the tab remotely
+
 3/22/24
 
 - Made it so a teacher can't close the tab remotely
@@ -58,6 +64,7 @@ Added a feature so a teacher can't close the tab remotely
 ## v1.4 - Alternate Links & Feedback
 
 Added some new pages, like alt links and feedback
+
 3/23/24 - 3/25/24
 
 - Added an alternate links page
@@ -70,6 +77,7 @@ Added some new pages, like alt links and feedback
 ### v1.4.1 - Fixed game names
 
 Fixed game names in both the changelog and games.js
+
 3/25/24
 
 - Reordered game names in assets/js/games.js
@@ -78,6 +86,7 @@ Fixed game names in both the changelog and games.js
 ## v1.5 - Clock
 
 Added clock page with interactive and animated backgrounds, and new themes
+
 3/25/24 - 4/3/24
 
 - Added new clock pages with interactive and animated backgrounds
@@ -94,6 +103,7 @@ Added clock page with interactive and animated backgrounds, and new themes
 ### v1.5.1 - Incremancer
 
 Added Incremancer by request
+
 4/4/24
 
 - Added incremancer to games
@@ -101,6 +111,7 @@ Added Incremancer by request
 #### v1.5.1.1 - Incremancer fix
 
 Bug fix for Incremancer
+
 4/4/24
 
 - Tried to fix incremancer
@@ -109,6 +120,7 @@ Bug fix for Incremancer
 #### v1.5.1.2 - Incremancer fix 2
 
 2nd bug fix for Incremancer
+
 4/4/24
 
 - Tried to fix incremancer
@@ -116,6 +128,7 @@ Bug fix for Incremancer
 #### v1.5.1.3 - Rename Incremancer
 
 Renamed the Incremancer directory
+
 4/4/24
 
 - Renamed incremancer-master to incremancer
@@ -123,6 +136,7 @@ Renamed the Incremancer directory
 ### v1.5.2 - Update Cookie Clicker
 
 Updated Cookie Clicker to newest version
+
 4/9/24
 
 - Updated Cookie Clicker to newest version
@@ -130,6 +144,7 @@ Updated Cookie Clicker to newest version
 #### v1.5.2.1 - Add note to try fullscreen
 
 Added note to try fullscreen
+
 4/9/24
 
 - Added note to try fullscreen
@@ -137,6 +152,7 @@ Added note to try fullscreen
 ## v1.6 - Unblocking
 
 Added some new features for unblocking
+
 4/13/24 - 4/17/24
 
 - Added about:blank embedder
@@ -148,6 +164,7 @@ Added some new features for unblocking
 ### v1.6.1 - Development changes
 
 Small developmental changes that users won't notice
+
 4/17/24
 
 - Added _redirects file
@@ -161,6 +178,42 @@ Small developmental changes that users won't notice
 #### v1.6.1.1 - EmulatorJS replace
 
 Accidentally replaced some of the files with EmulatorJS files
+
 4/17/24
 
 - Fixed accidentally EmulatorJS replaced files
+
+## v2 - Big changes
+
+Giant update, full of new games, CSS changes, game images, and more
+
+4/17/24 - 4/30/24
+
+- Changed the game display page CSS
+- Added game images
+- Renamed 8ball-billards-classic to 8ball-billiards-classic, chromaincident to chroma-incident, endlesswar3 to endless-war-3, Papas Pizzaria to Papas Pizzeria, scrapmetal to scrap-metal-3, smokingbarrels to smokin-barrels, snowbattle to snow-battle-io, tactical-assasin to tactical-assassin, added a slightly better version of Stickman Hook, and renamed it as Stickman Hook (was just Stickman), deleted duplicate Death Run 3D (under death-run), Chrome Dino (under dino), Doge Miner (under doge-mining-simulator), Fireboy and Watergirl (under fireboy-and-watergirl-forest-temple), Particle Clicker (under particleclicker), Google Snake (under snake), Mario (under super-mario-maker-online), deleted Double Wires because it doesn't work, deleted Dungeon Craft because it never loads, deleted broken Elastic Man and renamed the duplicate working version (elastic-face) to Elastic Man, Renamed Gopher to Gopher Kart, Grey Box to Grey Box Testing, Icys Purple Head to Icy Purple Head 2, Idle Shark to Shark Game, Justfall to Justfall Lol, Shadow World Adventure to Shadoworld Adventure, Slither Snake to Snake, Winter Falling Price to Winter Falling Price of Life, Wolf3D to Wolfenstein 3D, and deleted Fake Virus and TV Static, because they aren't even games
+- Made categories page look better
+- Added new categories for cars and idle games
+- Added reload game button in game display page
+- Added a "fullscreen needed to play" list of games
+- Added the surf game from Microsoft Edge, Basket Random, Volley Random, Soccer Random, and Top Speed Racing 2D
+- Updated Don't Drop the White Ball 2's index.htm to an html extension
+- Learned .htaccess is only for Apache web servers, changed it to _redirects
+- Seperated the game names from games.js to gameNames.js
+- Deleted EmulatorJS and Fruit Ninja from gameNames.js temporarily, until I readd them.
+- Removed "Created by ChatGPT" comment at end of games.js, because I have coded more of it now
+- Added version and changelog viewing
+- Added compact and loose view for game list
+- Combined random-text.js and aboutblankembedder.js into index.js
+- Added localStorage warning on first site visit
+- Improved game-box CSS hover effects
+- Removed broken games: all of the The Impossible Quizzes, Jetpack, Path Finder, Pizzeria Simulator, Shift Flash 2, and Stick Climb
+- Added info about the site on index.html
+- Switched to SCSS for themes
+- Minor code optimization and sorting changes
+- Made easter egg page coole
+- Added 10 new themes and 2 new fonts
+- Added basic iframer
+- Made it so not all the fonts load, just the one selected
+- Added view counter
+- Improved README
