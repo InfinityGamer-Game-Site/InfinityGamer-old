@@ -187,7 +187,7 @@ Accidentally replaced some of the files with EmulatorJS files
 
 Giant update, full of new games, CSS changes, game images, and more
 
-4/17/24 -
+4/17/24 - 4/30/24
 
 - Changed the game display page CSS
 - Added game images
