@@ -67,3 +67,21 @@ if (!localStorage.getItem("visited")) {
     document.body.appendChild(popup);
     localStorage.setItem("visited", true);
 }
+
+const box = document.getElementById('embed-button');
+
+box.addEventListener('mousemove', e => {
+    const boundingRect = box.getBoundingClientRect();
+    const offsetX = e.clientX - boundingRect.left;
+    const offsetY = e.clientY - boundingRect.top;
+
+    const rotateX = (offsetY / boundingRect.height - 0.5) * 90; // Adjust rotation angle based on mouse position
+    const rotateY = (offsetX / boundingRect.width - 0.5) * 15; // Adjust rotation angle based on mouse position
+
+    box.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`; // Apply rotation
+});
+
+box.addEventListener('mouseleave', () => {
+    // Reset rotation when mouse leaves the element
+    box.style.transform = 'rotateX(0deg) rotateY(0deg)';
+});

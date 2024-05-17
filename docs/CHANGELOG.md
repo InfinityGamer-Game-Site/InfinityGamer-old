@@ -4,7 +4,7 @@ First release of site
 
 3/18/24
 
-- Released the site.
+- Released the site
 
 ## v1.1 - First fixes
 
@@ -96,7 +96,7 @@ Added clock page with interactive and animated backgrounds, and new themes
 - Fixed broken cloaking
 - Made navbar taller
 - Renamed games/files/100ng to games/files/100-player-pong
-- Made the annoying "GoGuardian Privacy Banner" not show on this site for people that have it.
+- Made the annoying "GoGuardian Privacy Banner" not show on this site for people that have it
 - Renamed the development directory to docs, to make more sense
 - Changed the layout of docs/CHANGELOG.md a little bit
 
@@ -183,7 +183,7 @@ Accidentally replaced some of the files with EmulatorJS files
 
 - Fixed accidentally EmulatorJS replaced files
 
-## v2 - Big changes
+# v2 - Big changes
 
 Giant update, full of new games, CSS changes, game images, and more
 
@@ -217,3 +217,17 @@ Giant update, full of new games, CSS changes, game images, and more
 - Made it so not all the fonts load, just the one selected
 - Added view counter
 - Improved README
+
+## v2.1 - Requests, Bug Fixes and Links
+
+Added some community requests, fixed some small bugs and added new alt links
+
+5/7/24 - 5/16/24 (Took a break for a bit)
+
+- Added 13 new main, alt, and sneaky alt links
+- Added territorial.io, Nazi Zombies, and Idle Mining Empire games
+- Removed scrapped favorites link
+- Fixed a small bug with favicons on games/index.html
+- Moved service-worker.js to assets/js/
+- Added some redirects for Vercel
+- Added game sharing
