@@ -183,7 +183,11 @@ Accidentally replaced some of the files with EmulatorJS files
 
 - Fixed accidentally EmulatorJS replaced files
 
+<<<<<<< HEAD
 # v2 - Big changes
+=======
+## v2 - Big changes
+>>>>>>> origin/main
 
 Giant update, full of new games, CSS changes, game images, and more
 
