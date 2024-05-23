@@ -32,7 +32,6 @@ window.addEventListener("load", displayRandomText);
 
 
 //about blank embedder
-var urlobj = new window.URL(window.location.href);
 let url = window.location.href;
 if (url) {
   var win;
@@ -56,6 +55,7 @@ if (url) {
       iframe.style.margin = "0";
       iframe.src = url;
       win.document.body.appendChild(iframe);
+      window.location.href = localStorage.getItem('redirectURL') || 'https://classroom.google.com/';
     }
   };
 }
@@ -75,10 +75,10 @@ box.addEventListener('mousemove', e => {
     const offsetX = e.clientX - boundingRect.left;
     const offsetY = e.clientY - boundingRect.top;
 
-    const rotateX = (offsetY / boundingRect.height - 0.5) * 90; // Adjust rotation angle based on mouse position
-    const rotateY = (offsetX / boundingRect.width - 0.5) * 15; // Adjust rotation angle based on mouse position
+    const rotateX = (offsetY / boundingRect.height - 0.5) * 30;
+    const rotateY = (offsetX / boundingRect.width - 0.5) * 5;
 
-    box.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`; // Apply rotation
+    box.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
 });
 
 box.addEventListener('mouseleave', () => {

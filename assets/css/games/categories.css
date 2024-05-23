@@ -18,7 +18,7 @@ button {
     font-size: 150%;
   }
   button:hover {
-    color: var(--link-color);
+    color: var(--accent-color-1);
   }
   
   button span {

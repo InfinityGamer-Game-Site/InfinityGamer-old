@@ -15,14 +15,52 @@
 
     <title>InfinityGamer</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/global.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/settings.css">
   </head>
   <body>
     <iframe src="../navbar.html" frameborder="0" scrolling="no" width="100%" height="75px"></iframe>
     <h1>Settings</h1>
+    
+    <div class="setpar" id="cloak-div">
+    <h2>Cloaking</h2>
+    <div class="cloak-container">
+        <div class="left-cloak">
+            <h3>Change Site Name</h3>
+            <form id="title-changer">
+                <label for="title">Site Name:</label>
+                <input type="text" id="title" placeholder="Google Classroom">
+                <button type="submit" style="height: 50px;">Submit</button>
+            </form>
+        </div>
+        <div class="center-cloak">
+            <h3>About:blank embedder</h3>
+            <p>Site to redirect to after embedding (Google Classroom by default)</p>
+            <form id="redirect-changer">
+                <label for="redir-url">Site URL (do not include https://):</label>
+                <input type="text" id="redir-url" placeholder="classroom.google.com">
+                <button type="submit" style="height: 50px;">Submit</button>
+            </form>
+        </div>
+        <div class="right-cloak">
+            <h2>Auto-about:blank embedder</h2>
+            <p>Automatically open website in about:blank window when opened.</p>
+            <p id="status-check"></p>
+            <label class="switch">
+                <input type="checkbox" id="aabeSwitch" onchange="toggleAutoAboutBlankEmbedder()">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+    <p>Reload to see changes applied.</p>
+</div>
+<br>
 
     
-    <div style="outline: 1px solid var(--text-color); padding: 10px;">
-      <h2>Theme</h2>
+    <div class="setpar">
+      <h2>Looks</h2>
+      <div class="cloak-container">
+      <div class="left-cloak">
+        <h3>Theme</h3>
       <button onclick="toggleTheme('dark')" style="background: var(--bg-color-dark); color: var(--text-color-dark); outline: 1px solid var(--text-color-dark);">Dark</button>
       <button onclick="toggleTheme('light')" style="background: var(--bg-color-light); color: var(--text-color-light); outline: 1px solid var(--text-color-light);">Light</button>
       <button onclick="toggleTheme('oceanic')" style="background: var(--bg-color-oceanic); color: var(--text-color-oceanic); outline: 1px solid var(--text-color-oceanic);">Oceanic</button>
@@ -49,38 +87,32 @@
       <button onclick="toggleTheme('candy')" style="background: var(--bg-color-candy); color: var(--text-color-candy); outline: 1px solid var(--text-color-candy);">Candy</button>
       <button onclick="toggleTheme('rainbow')" style="background: var(--bg-color-rainbow); color: var(--text-color-rainbow); outline: 1px solid var(--text-color-rainbow);">Rainbow</button>
       <button onclick="toggleTheme('gothic')" style="background: var(--bg-color-gothic); color: var(--text-color-gothic); outline: 1px solid var(--text-color-gothic);">Gothic</button>
+      <button onclick="toggleTheme('swirl')" style="background: var(--bg-color-swirl); color: var(--text-color-swirl); outline: 1px solid var(--text-color-swirl);">Swirl</button>
+      </div>
+      <div class="right-cloak">
+    <h3>Font</h3>
+    <div id="fontSelect">
+        <button onclick="applyFont('Orbitron')">Orbitron (Default)</button>
+        <button onclick="applyFont('Open Sans')">Google (Open Sans)</button>
+        <button onclick="applyFont('Arial')">Arial</button>
+        <button onclick="applyFont('Verdana')">Verdana</button>
+        <button onclick="applyFont('Times New Roman')">Times New Roman</button>
+        <button onclick="applyFont('Courier New')">Courier New</button>
+        <button onclick="applyFont('Comic Neue')">Comic Neue</button>
+        <button onclick="applyFont('Cookie')">Cursive (Cookie)</button>
+        <button onclick="applyFont('Poetsen One')">Poetsen One</button>
+        <button onclick="applyFont('Black Ops One')">Black Ops One</button>
+        <button onclick="applyFont('Special Elite')">Typewriter (Special Elite)</button>
+        <button onclick="applyFont('Silkscreen')">Pixel (Silkscreen)</button>
+        <button onclick="applyFont('Audiowide')">Audiowide</button>
     </div>
-
-    <br>
-    <div style="outline: 1px solid var(--text-color); padding: 10px;">
-    <h2>Font</h2>
-<select id="fontSelect" style="background: var(--transparent); color: var(--text-color); outline: 1px solid var(--text-color);">
-  <option value="" selected disabled>Select Font</option>
-  <option value="Orbitron">Orbitron (Default)</option>
-  <option value="Open Sans">Open Sans</option>
-  <option value="Arial">Arial</option>
-  <option value="Verdana">Verdana</option>
-  <option value="Times New Roman">Times New Roman</option>
-  <option value="Courier New">Courier New</option>
-  <option value="Comic Neue">Comic Sans</option>
-  <option value="Cookie">Cookie</option>
-  <option value="Montserrat">Montserrat</option>
-</select>
-<button onclick="applyFont()" style="height: 50px;">Apply Font</button>
+</div>
+</div>
 </div>
 <br>
 
-    <div style="outline: 1px solid var(--text-color); padding: 10px;">
+    
 
-    <h2>Cloaker</h2>
-
-      <form id="form">
-        <label for="title">Site Title:</label>
-        <input type="text" id="title" placeholder="Enter your title">
-        <button type="submit" style="height: 50px;">Cloak Tab</button>
-      </form>
-
-    </div>
 
     <button onclick="redirect('changelog.html')" style="height: 50px; width: 200px;">View Changelog</button>
 

@@ -1,147 +1,171 @@
 $color-themes: (
   light: (
     bg-color: #fff,
-    bgt-color: #ffffff80,
+    bg-transp-color: #ffffff80,
     text-color: #000000,
-    link-color: #007bff
+    accent-color-1: #007bff,
+    accent-color-2: #ff007b
   ),
   dark: (
     bg-color: #000000,
-    bgt-color: #00000080,
+    bg-transp-color: #00000080,
     text-color: #fff,
-    link-color: #007bff
+    accent-color-1: #007bff,
+    accent-color-2: #ff007b
   ),
   oceanic: (
     bg-color: #015ab9,
-    bgt-color: #015ab980,
+    bg-transp-color: #015ab980,
     text-color: #fff,
-    link-color: #ff00ea
+    accent-color-1: #ff00ea,
+    accent-color-2: #00ffea
   ),
   midnight: (
     bg-color: #3e0147,
-    bgt-color: #3e014780,
+    bg-transp-color: #3e014780,
     text-color: #fff,
-    link-color: #4b0b8a
+    accent-color-1: #4b0b8a,
+    accent-color-2: #8a0b4b
   ),
   bubblegum: (
     bg-color: #ff67b3,
-    bgt-color: #ff67b380,
+    bg-transp-color: #ff67b380,
     text-color: #1c000b,
-    link-color: #8b1abc
+    accent-color-1: #8b1abc,
+    accent-color-2: #bc1a8b
   ),
   gray: (
     bg-color: #5a5a5a,
-    bgt-color: #5a5a5a80,
+    bg-transp-color: #5a5a5a80,
     text-color: #bfbfbf,
-    link-color: #004da0
+    accent-color-1: #004da0,
+    accent-color-2: #a0004d
   ),
   neo: (
     bg-color: #000000,
-    bgt-color: #00000080,
+    bg-transp-color: #00000080,
     text-color: #409cff,
-    link-color: #004da0
+    accent-color-1: #004da0,
+    accent-color-2: #a0004d
   ),
   forest: (
     bg-color: #236126,
-    bgt-color: #23612680,
+    bg-transp-color: #23612680,
     text-color: #fff,
-    link-color: #64dd17
+    accent-color-1: #64dd17,
+    accent-color-2: #dd1764
   ),
   winter: (
     bg-color: #09273d,
-    bgt-color: #09273d80,
+    bg-transp-color: #09273d80,
     text-color: #c3eaff,
-    link-color: #00aeff
+    accent-color-1: #00aeff,
+    accent-color-2: #ffae00
   ),
   spring: (
     bg-color: #3ec043,
-    bgt-color: #3ec04380,
+    bg-transp-color: #3ec04380,
     text-color: #2a310b,
-    link-color: #29830b
+    accent-color-1: #29830b,
+    accent-color-2: #830b29
   ),
   summer: (
     bg-color: #e6cf4a,
-    bgt-color: #e6cf4a80,
+    bg-transp-color: #e6cf4a80,
     text-color: #0d2f01,
-    link-color: #d5a52b
+    accent-color-1: #d5a52b,
+    accent-color-2: #2bd5a5
   ),
   fall: (
     bg-color: #3d2e09,
-    bgt-color: #3d2e0980,
+    bg-transp-color: #3d2e0980,
     text-color: #f9ffc3,
-    link-color: #ff6600
+    accent-color-1: #ff6600,
+    accent-color-2: #6600ff
   ),
   mystic: (
     bg-color: #2b1055,
-    bgt-color: #2b105580,
+    bg-transp-color: #2b105580,
     text-color: #ffffff,
-    link-color: #f72585
+    accent-color-1: #f72585,
+    accent-color-2: #85f725
   ),
   sunset: (
     bg-color: #ff6b6b,
-    bgt-color: #ff6b6b80,
+    bg-transp-color: #ff6b6b80,
     text-color: #2c3e50,
-    link-color: #ff9f1c
+    accent-color-1: #ff9f1c,
+    accent-color-2: #1cff9f
   ),
   galactic: (
     bg-color: #0c1446,
-    bgt-color: #0c144680,
+    bg-transp-color: #0c144680,
     text-color: #bfc0c0,
-    link-color: #a88c02
+    accent-color-1: #a88c02,
+    accent-color-2: #8ca802
   ),
   enchanted: (
     bg-color: #3c1053,
-    bgt-color: #3c105380,
+    bg-transp-color: #3c105380,
     text-color: #f64c72,
-    link-color: #2d00f7
+    accent-color-1: #2d00f7,
+    accent-color-2: #f72d00
   ),
   desert: (
     bg-color: #F4E1C1,
-    bgt-color: #F4E1C180,
+    bg-transp-color: #F4E1C180,
     text-color: #6D5837,
-    link-color: #BF6E48
+    accent-color-1: #BF6E48,
+    accent-color-2: #6EBF48
   ),
   arctic: (
     bg-color: #D6EAF8,
-    bgt-color: #D6EAF880,
+    bg-transp-color: #D6EAF880,
     text-color: #1F618D,
-    link-color: #3498DB
+    accent-color-1: #3498DB,
+    accent-color-2: #DB3498
   ),
   tropical: (
     bg-color: #D5F5E3,
-    bgt-color: #D5F5E380,
+    bg-transp-color: #D5F5E380,
     text-color: #196F3D,
-    link-color: #28B463
+    accent-color-1: #28B463,
+    accent-color-2: #B42863
   ),
   pastel: (
     bg-color: #FADBD8,
-    bgt-color: #FADBD880,
+    bg-transp-color: #FADBD880,
     text-color: #884EA0,
-    link-color: #AF7AC5
+    accent-color-1: #AF7AC5,
+    accent-color-2: #C57AAF
   ),
   urban: (
     bg-color: #34495E,
-    bgt-color: #34495E80,
+    bg-transp-color: #34495E80,
     text-color: #ECF0F1,
-    link-color: #E74C3C
+    accent-color-1: #E74C3C,
+    accent-color-2: #4CE7E7
   ),
   vintage: (
     bg-color: #FAE5D3,
-    bgt-color: #FAE5D380,
+    bg-transp-color: #FAE5D380,
     text-color: #7D6608,
-    link-color: #D4AC0D
+    accent-color-1: #D4AC0D,
+    accent-color-2: #AC0DD4
   ),
   futuristic: (
     bg-color: #151719,
-    bgt-color: #E5E7E980,
+    bg-transp-color: #E5E7E980,
     text-color: #5C7E90,
-    link-color: #2980B9
+    accent-color-1: #2980B9,
+    accent-color-2: #B98029
   ),
   candy: (
     bg-color: #FDEDEC,
-    bgt-color: #FDEDEC80,
+    bg-transp-color: #FDEDEC80,
     text-color: #6E2C00,
-    link-color: #E74C3C
+    accent-color-1: #E74C3C,
+    accent-color-2: #4CE74C
   ),
   rainbow: (
     bg-color: linear-gradient(90deg, 
@@ -156,7 +180,7 @@ $color-themes: (
     rgba(186, 12, 248, 1) 80%,
     rgba(251, 7, 217, 1) 90%,
     rgba(255, 0, 0, 1) 100%),
-    bgt-color: linear-gradient(90deg, 
+    bg-transp-color: linear-gradient(90deg, 
     rgba(255, 0, 0, 0.5) 0%,
     rgba(255, 154, 0, 0.5) 10%,
     rgba(208, 222, 33, 0.5) 20%,
@@ -169,13 +193,26 @@ $color-themes: (
     rgba(251, 7, 217, 0.5) 90%,
     rgba(255, 0, 0, 0.5) 100%),
     text-color: #000000,
-    link-color: #FFFFFF
+    accent-color-1: #FFFFFF,
+    accent-color-2: #000000
   ),
   gothic: (
     bg-color: #2C3E50,
-    bgt-color: #2C3E5080,
+    bg-transp-color: #2C3E5080,
     text-color: #ad4644,
-    link-color: #9B59B6
+    accent-color-1: #9B59B6,
+    accent-color-2: #B69B59
+  ),
+  swirl: (
+    bg-color: linear-gradient(90deg, 
+    rgb(0, 255, 255) 0%,
+    rgb(255, 0, 255) 100%),
+    bg-transp-color: linear-gradient(90deg, 
+    rgb(0, 255, 255, 0.5) 0%,
+    rgb(255, 0, 255, 0.5) 100%),
+    text-color: #000000,
+    accent-color-1: #FFFFFF,
+    accent-color-2: #000000
   )
 );
 

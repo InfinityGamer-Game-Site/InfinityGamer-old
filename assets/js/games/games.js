@@ -99,6 +99,17 @@ let randomGame = gameNames[randomIndex];
         window.location.href = gameLink;
       });
       document.getElementById("random-game-container").appendChild(gameBox);
+
+      searchInput.addEventListener("input", function () {
+        const filterValue = this.value.toLowerCase();
+        if (filterValue === "") {
+            gameBox.style.display = "block";
+            randomGameLabel.style.display = "block";
+        } else {
+            gameBox.style.display = "none";
+            randomGameLabel.style.display = "none";
+        }
+    });
   }
 
   const marginSwitch = document.getElementById('marginSwitch');

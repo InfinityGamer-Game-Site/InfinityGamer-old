@@ -65,3 +65,41 @@ function redirect(link){
     window.parent.location.href = link;
   }
 }
+
+const banner = document.getElementById("gg-privacy-banner");
+  
+  if (banner) {
+    banner.remove();
+  }
+
+
+let urle = window.location.href;
+
+function autoABE() {
+  var wind;
+  if (wind) {
+    wind.focus();
+  } else {
+    var features =
+      "width=" +
+      window.innerWidth +
+      ",height=" +
+      window.innerHeight +
+      ",menubar=no,toolbar=no,location=no,status=no";
+    wind = window.open("", "_blank", features);
+    wind.document.body.style.margin = "0";
+    wind.document.body.style.height = "100%";
+    var iframe = wind.document.createElement("iframe");
+    iframe.style.border = "none";
+    iframe.style.width = "100%";
+    iframe.style.height = "100%";
+    iframe.style.margin = "0";
+    iframe.src = urle;
+    wind.document.body.appendChild(iframe);
+    window.location.href = localStorage.getItem('redirectURL') || 'https://classroom.google.com/';
+  }
+}
+
+if (localStorage.getItem('autoAboutBlankEmbed') === 'true' && !(window.location.pathname === '/navbar.html') && window.top.location.href !== "about:blank") {
+  autoABE();
+}

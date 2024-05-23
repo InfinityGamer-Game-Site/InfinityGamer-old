@@ -7,7 +7,6 @@ if (searchParam) {
   document.getElementById("gameFrame").src = "files/" + searchParam + "/index.html";
   document.getElementById("gameName").textContent = title;
   document.getElementById("fullscreenButton").href = "files/" + searchParam + "/index.html";
-  document.getElementById("sourceButton").href = "https://github.com/InfinityGamer-Game-Site/InfinityGamer/tree/main/games/files/" + searchParam;
   const savedTitle = localStorage.getItem("title");
 
   if (savedTitle) {
@@ -18,7 +17,7 @@ if (searchParam) {
 
   if (fullscreenNeeded.includes(searchParam)){
     const popup = document.createElement('pop-up');
-    popup.textContent = 'This game needs fullscreen to work! Redirecting you to fullscreen...';
+    popup.textContent = 'This game needs source view to work! Redirecting you...';
     const goNowButton = document.createElement('button');
     goNowButton.textContent = "Go now";
     goNowButton.onclick = "window.location.href = files/" + searchParam + "/index.html"
@@ -45,7 +44,6 @@ function reloadIframe() {
     iframe.contentWindow.location.reload(true); // Reload the iframe's content
 }
 
-// Example of triggering the reload on a button click
 var reloadButton = document.getElementById('reloadButton');
 reloadButton.addEventListener('click', reloadIframe);
 

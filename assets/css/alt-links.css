@@ -24,6 +24,6 @@ iframe {
   }
   
  ul li a:hover {
-    background-color: var(--link-color);
+    background-color: var(--accent-color-1);
   }
   

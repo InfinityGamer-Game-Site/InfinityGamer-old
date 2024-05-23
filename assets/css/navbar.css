@@ -25,7 +25,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: var(--link-color);
+  background-color: var(--accent-color-1);
 }
 
 #time {
@@ -33,4 +33,14 @@ nav ul li a:hover {
   top: 5px;
   right: 5px;
   font-size: 125%;
+}
+
+.settings-nav, .clock-nav {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.settings-nav:hover, .clock-nav:hover {
+  transform: rotate(360deg);
 }

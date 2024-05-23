@@ -13,55 +13,7 @@
   justify-content: center;
 }
 
-/* Switch styles */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
 
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #2196F3;
-  transition: .5s;
-  border-radius: 34px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: .4s;
-  border-radius: 50%;
-}
-
-input:checked + .slider {
-  background-color: #f32121;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #f32121;
-}
-
-input:checked + .slider:before {
-  transform: translateX(26px);
-}
 
 /* Game box styles */
 .game-box {
@@ -91,8 +43,8 @@ input:checked + .slider:before {
 }
 
 .game-box:hover {
-  color: var(--link-color);
-  border: 1px solid var(--link-color);
+  color: var(--accent-color-1);
+  border: 1px solid var(--accent-color-1);
   border-radius: 20%;
   margin: -15px;
   margin-left: 15px;
@@ -104,8 +56,8 @@ input:checked + .slider:before {
 }
 
 .game-box.random-game:hover {
-  color: var(--link-color);
-  border: 1px solid var(--link-color);
+  color: var(--accent-color-1);
+  border: 1px solid var(--accent-color-1);
   border-radius: 20%;
   margin: 15px;
   translate: 0 0;
@@ -123,7 +75,7 @@ input:checked + .slider:before {
 }
 
 .game-box span {
-  background: var(--bgt-color);
+  background: var(--bg-transp-color);
   padding-bottom: 5px;
 }
 
