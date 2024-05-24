@@ -1,7 +1,7 @@
 # InfinityGamer
 
 Infinite fun, unblocked!
-A new game site with over 350 games, an unblocked proxy viewer with over 700 links, and much more!
+A new game site with over 350 games, many alternate links, and much more!
 ![GitHub repo size](https://img.shields.io/github/repo-size/InfinityGamer-Game-Site/InfinityGamer)
 ![GitHub repo file or directory count (in path)](https://img.shields.io/github/directory-file-count/InfinityGamer-Game-Site/InfinityGamer/games%2Ffiles?type=dir&label=games)
 

@@ -1,4 +1,6 @@
-# v1 - Initial Release
+# Changelog
+
+## v1 - Initial Release
 
 First release of site
 
@@ -6,7 +8,7 @@ First release of site
 
 - Released the site
 
-# v1.1 - First fixes
+### v1.1 - First fixes
 
 First bug fixes and feature changes
 
@@ -20,7 +22,7 @@ First bug fixes and feature changes
 - Added license
 - Added easter egg
 
-## v1.1.1 - SM64 Typo
+#### v1.1.1 - SM64 Typo
 
 Fixed a small typo in the Super Mario 64 game directory
 
@@ -28,7 +30,7 @@ Fixed a small typo in the Super Mario 64 game directory
 
 - Renamed games/files/super-maio-64 to games/files/super-mario-64, which fixed a referencing error
 
-# v1.2 - Search bar and game display page
+### v1.2 - Search bar and game display page
 
 Added some new features, like a search bar, and a game display page, and some small bug fixes
 
@@ -42,7 +44,7 @@ Added some new features, like a search bar, and a game display page, and some sm
 - Changed layout of development/CHANGELOG.md to make more sense and to be easier to read
 - Made theme buttons look like their themes
 
-# v1.3 - Categories
+### v1.3 - Categories
 
 Added game categories, and some small changes
 
@@ -53,7 +55,7 @@ Added game categories, and some small changes
 - Added categories of games
 - Renamed games/game.html or games/display.html, renamed ?game query to ?g
 
-## v1.3.1 - Anti-tab-close
+#### v1.3.1 - Anti-tab-close
 
 Added a feature so a teacher can't close the tab remotely
 
@@ -61,7 +63,7 @@ Added a feature so a teacher can't close the tab remotely
 
 - Made it so a teacher can't close the tab remotely
 
-# v1.4 - Alternate Links & Feedback
+### v1.4 - Alternate Links & Feedback
 
 Added some new pages, like alt links and feedback
 
@@ -74,7 +76,7 @@ Added some new pages, like alt links and feedback
 - Added rudimentary tab cloaking
 - Made all game names lowercase
 
-## v1.4.1 - Fixed game names
+#### v1.4.1 - Fixed game names
 
 Fixed game names in both the changelog and games.js
 
@@ -83,7 +85,7 @@ Fixed game names in both the changelog and games.js
 - Reordered game names in assets/js/games.js
 - Fixed some incorrect file names in development/CHANGELOG.md
 
-# v1.5 - Clock
+### v1.5 - Clock
 
 Added clock page with interactive and animated backgrounds, and new themes
 
@@ -100,7 +102,7 @@ Added clock page with interactive and animated backgrounds, and new themes
 - Renamed the development directory to docs, to make more sense
 - Changed the layout of docs/CHANGELOG.md a little bit
 
-## v1.5.1 - Incremancer
+#### v1.5.1 - Incremancer
 
 Added Incremancer by request
 
@@ -108,7 +110,7 @@ Added Incremancer by request
 
 - Added incremancer to games
 
-### v1.5.1.1 - Incremancer fix
+##### v1.5.1.1 - Incremancer fix
 
 Bug fix for Incremancer
 
@@ -117,7 +119,7 @@ Bug fix for Incremancer
 - Tried to fix incremancer
 - Made navbar clock update faster
 
-### v1.5.1.2 - Incremancer fix 2
+##### v1.5.1.2 - Incremancer fix 2
 
 2nd bug fix for Incremancer
 
@@ -125,7 +127,7 @@ Bug fix for Incremancer
 
 - Tried to fix incremancer
 
-### v1.5.1.3 - Rename Incremancer
+##### v1.5.1.3 - Rename Incremancer
 
 Renamed the Incremancer directory
 
@@ -133,7 +135,7 @@ Renamed the Incremancer directory
 
 - Renamed incremancer-master to incremancer
 
-## v1.5.2 - Update Cookie Clicker
+#### v1.5.2 - Update Cookie Clicker
 
 Updated Cookie Clicker to newest version
 
@@ -141,7 +143,7 @@ Updated Cookie Clicker to newest version
 
 - Updated Cookie Clicker to newest version
 
-### v1.5.2.1 - Add note to try fullscreen
+##### v1.5.2.1 - Add note to try fullscreen
 
 Added note to try fullscreen
 
@@ -149,7 +151,7 @@ Added note to try fullscreen
 
 - Added note to try fullscreen
 
-# v1.6 - Unblocking
+### v1.6 - Unblocking
 
 Added some new features for unblocking
 
@@ -161,7 +163,7 @@ Added some new features for unblocking
 - Added 667 new proxies
 - Added temperature and weather to clock pages
 
-## v1.6.1 - Development changes
+#### v1.6.1 - Development changes
 
 Small developmental changes that users won't notice
 
@@ -175,7 +177,7 @@ Small developmental changes that users won't notice
 - Minified a lot of the game files
 - Accidentally deleted Fruit Ninja and EmulatorJS, will restore later
 
-### v1.6.1.1 - EmulatorJS replace
+##### v1.6.1.1 - EmulatorJS replace
 
 Accidentally replaced some of the files with EmulatorJS files
 
@@ -183,7 +185,7 @@ Accidentally replaced some of the files with EmulatorJS files
 
 - Fixed accidentally EmulatorJS replaced files
 
- v2 - Big changes
+## v2 - Big changes
 
 Giant update, full of new games, CSS changes, game images, and more
 
@@ -218,7 +220,7 @@ Giant update, full of new games, CSS changes, game images, and more
 - Added view counter
 - Improved README
 
-# v2.1 - Requests, Bug Fixes and Links
+### v2.1 - Requests, Bug Fixes and Links
 
 Added some community requests, fixed some small bugs and added new alt links
 
@@ -232,7 +234,7 @@ Added some community requests, fixed some small bugs and added new alt links
 - Added some redirects for Vercel
 - Added game sharing
 
-## v2.1.1 - Removed proxies
+#### v2.1.1 - Removed proxies
 
 Removed proxies due to security reasons
 
@@ -240,7 +242,7 @@ Removed proxies due to security reasons
 
 - Removed proxy viewer
 
-# v2.2 - Assorted Features
+### v2.2 - Assorted Features
 
 New smaller features and more games
 
@@ -259,3 +261,10 @@ New smaller features and more games
 - Removed duplicate snake in gameNames.js
 - Added WIP devlog
 - Added some hover effect to navbar buttons
+
+### v2.2.1 - File saving and version fixes
+
+Added saving all saves as one file, and (hopefully) fixed caching old versions
+
+- Added ability to save all game saves as one file
+- Hopefully fixed older cached versions not updating
