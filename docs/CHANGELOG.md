@@ -246,6 +246,8 @@ Removed proxies due to security reasons
 
 New smaller features and more games
 
+5/20/24 - 5/22/24
+
 - Improved GoGuardian Privacy Banner hiding
 - Added auto-about:blank embedder
 - Added tab redirecting after about:blank embedding (customizable)
@@ -266,5 +268,30 @@ New smaller features and more games
 
 Added saving all saves as one file, and (hopefully) fixed caching old versions
 
+5/23/24
+
 - Added ability to save all game saves as one file
 - Hopefully fixed older cached versions not updating
+
+### v2.2.2 - Removed unsafe games
+
+Removed games with security vulnerabilites
+
+5/24/24
+
+- Removed Sonic and Gopher Kart because of their many security vulnerabilities.
+
+## v2.3 - Small changes
+
+Just small changes and bug fixes, QOL, etc. I've hit the point at InfinityGamer where there isn't too much I can do anymore.
+
+5/24/24 - 5/27/24
+
+- Added new logo and favicons
+- Changed default save file name
+- Fixed settings looks div extra closing tag
+- Added some more clarification on what save file does
+- Added aurora, sea, beach, and mountains themes
+- Added new games: 0hh1, 0hn0, Burnin Rubber 5XS, Burnout Drift 3, Five Nights At Freddy's, and Little Alchemy
+- Made it so you can see what the fonts look like in settings, and made them and the themes dynamically generated, so it is easier to make new ones later
+- Removed some buttons from the game display navbar to give it more room for longer game names

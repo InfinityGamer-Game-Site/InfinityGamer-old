@@ -85,3 +85,35 @@ box.addEventListener('mouseleave', () => {
     // Reset rotation when mouse leaves the element
     box.style.transform = 'rotateX(0deg) rotateY(0deg)';
 });
+
+window.onload = function() {
+    // Select the image element
+    const image = document.getElementById('infinitylogo');
+    PowerGlitch.glitch(image, {
+  "playMode": "always",
+  "createContainers": true,
+  "hideOverflow": false,
+  "timing": {
+    "duration": 4000,
+    "easing": "ease-in-out"
+  },
+  "glitchTimeSpan": {
+    "start": 0,
+    "end": 0.5
+  },
+  "shake": {
+    "velocity": 15,
+    "amplitudeX": 0.2,
+    "amplitudeY": 0.2
+  },
+  "slice": {
+    "count": 6,
+    "velocity": 15,
+    "minHeight": 0.02,
+    "maxHeight": 0.3,
+    "hueRotate": true
+  },
+  "pulse": false
+});
+};
+

@@ -1,11 +1,4 @@
 {
-    "redirects": [
-      {
-        "source": "/share/:game",
-        "destination": "/games/display.html?g=:game",
-        "permanent": true
-      }
-    ],
     "rewrites": [
       {
         "source": "/:path*",

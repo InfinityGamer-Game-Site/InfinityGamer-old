@@ -31,10 +31,8 @@ document.getElementById('redirect-changer').addEventListener('submit', function(
 function applyFont(fontName) {
     document.body.style.fontFamily = fontName;
     localStorage.setItem('selectedFont', fontName);
-    location.reload(); // Reload the page to apply the font imediately
+    location.reload();
 }
-
-
 
 
 function toggleAutoAboutBlankEmbedder() {
@@ -70,7 +68,7 @@ document.getElementById('backupBtn').addEventListener('click', () => {
   
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'localStorageBackup.infinitygamersave';
+  a.download = 'infinitygamer.save';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
@@ -93,4 +91,97 @@ document.getElementById('restoreFileInput').addEventListener('change', (event) =
       };
       reader.readAsText(file);
   }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const storedFonts = [
+      { name: 'Orbitron', displayName: 'Orbitron (Default)' },
+      { name: 'Open Sans', displayName: 'Open Sans' },
+      { name: 'Arial', displayName: 'Arial' },
+      { name: 'Verdana', displayName: 'Verdana' },
+      { name: 'Times New Roman', displayName: 'Times New Roman' },
+      { name: 'Courier New', displayName: 'Courier New' },
+      { name: 'Comic Neue', displayName: 'Comic Neue' },
+      { name: 'Cookie', displayName: 'Cookie' },
+      { name: 'Poetsen One', displayName: 'Poetsen One' },
+      { name: 'Black Ops One', displayName: 'Black Ops One' },
+      { name: 'Special Elite', displayName: 'Special Elite' },
+      { name: 'Silkscreen', displayName: 'Silkscreen' },
+      { name: 'Audiowide', displayName: 'Audiowide' }
+  ];
+
+  const fontSelectDiv = document.getElementById('fontSelect');
+  const contentDiv = document.getElementById('content');
+
+  storedFonts.forEach(font => {
+      // Create and append style element to import font
+      const styleElement = document.createElement('style');
+      styleElement.innerHTML = `
+          @import url('https://fonts.googleapis.com/css2?family=${font.name.replace(/ /g, '+')}&display=swap');
+      `;
+      document.head.appendChild(styleElement);
+
+      // Create and append button element
+      const buttonElement = document.createElement('button');
+      buttonElement.textContent = font.displayName;
+      buttonElement.style.fontFamily = font.name; 
+      buttonElement.onclick = () => applyFont(font.name);
+      fontSelectDiv.appendChild(buttonElement);
+  });
+
+  // Define an array of theme names
+const themes = [
+  'dark',
+  'light',
+  'oceanic',
+  'midnight',
+  'bubblegum',
+  'gray',
+  'neo',
+  'forest',
+  'winter',
+  'spring',
+  'summer',
+  'fall',
+  'mystic',
+  'sunset',
+  'galactic',
+  'enchanted',
+  'desert',
+  'arctic',
+  'tropical',
+  'pastel',
+  'urban',
+  'vintage',
+  'futuristic',
+  'candy',
+  'rainbow',
+  'gothic',
+  'swirl',
+  'aurora',
+  'sea',
+  'beach',
+  'mountains'
+];
+
+// Function to create theme buttons
+function createThemeButtons() {
+  const themeButtonsContainer = document.getElementById('themeButtons');
+
+  // Loop through each theme and create a button
+  themes.forEach(theme => {
+    const button = document.createElement('button');
+    button.textContent = theme.charAt(0).toUpperCase() + theme.slice(1); // Capitalize first letter
+    button.style.background = `var(--bg-color-${theme})`; // Set background color
+    button.style.color = `var(--text-color-${theme})`; // Set text color
+    button.style.outline = `1px solid var(--text-color-${theme})`; // Set outline color
+    button.onclick = () => toggleTheme(theme); // Assign onclick event
+    themeButtonsContainer.appendChild(button); // Append button to container
+  });
+}
+
+// Call the function to create theme buttons
+createThemeButtons();
+
+
 });

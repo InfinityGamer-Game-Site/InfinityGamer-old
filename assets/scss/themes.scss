@@ -155,7 +155,7 @@ $color-themes: (
   ),
   futuristic: (
     bg-color: #151719,
-    bg-transp-color: #E5E7E980,
+    bg-transp-color: #15171980,
     text-color: #5C7E90,
     accent-color-1: #2980B9,
     accent-color-2: #B98029
@@ -213,6 +213,34 @@ $color-themes: (
     text-color: #000000,
     accent-color-1: #FFFFFF,
     accent-color-2: #000000
+  ),
+  aurora: (
+    bg-color: linear-gradient(90deg, rgba(44, 62, 80) 0%, rgb(76, 175, 109) 80%, rgb(175, 76, 150) 100%),
+    bg-transp-color: linear-gradient(90deg, rgba(44, 62, 80, 0.5) 0%, rgba(76, 175, 109, 0.5) 80%, rgb(175, 76, 150, 0.5) 100%),
+    text-color: #ffffff,
+    accent-color-1: #32a852,
+    accent-color-2: #a832a8
+  ),
+  sea: (
+    bg-color: linear-gradient(90deg, #87CEEB 0%, #1E90FF 100%),
+    bg-transp-color: linear-gradient(90deg, rgba(135, 206, 235, 0.5) 0%, rgba(30, 144, 255, 0.5) 100%),
+    text-color: #FFFFFF,
+    accent-color-1: #48D1CC,
+    accent-color-2: #FFA500
+  ),
+  beach: (
+    bg-color: linear-gradient(90deg, #FFA07A 0%, #985942 100%),
+    bg-transp-color: linear-gradient(90deg, rgba(255, 160, 122, 0.5) 0%, rgba(255, 127, 80, 0.5) 100%),
+    text-color: #FFFFFF,
+    accent-color-1: #FFD700,
+    accent-color-2: #87CEEB
+  ),
+  mountains: (
+    bg-color: linear-gradient(90deg, #b3dde3 0%, #598db8 100%),
+    bg-transp-color: linear-gradient(90deg, rgba(176, 224, 230, 0.5) 0%, rgba(70, 130, 180, 0.5) 100%),
+    text-color: #000000,
+    accent-color-1: #00eeff,
+    accent-color-2: #ffee00
   )
 );
 
