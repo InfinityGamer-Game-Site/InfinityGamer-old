@@ -1,4 +1,4 @@
-const CACHE_NAME = 'my-site-cache-v4';
+const CACHE_NAME = 'my-site-cache-v5';
 const urlsToCache = [
   '/',
   'assets/css/global.css',
