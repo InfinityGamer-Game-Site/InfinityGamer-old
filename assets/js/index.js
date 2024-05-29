@@ -10,7 +10,7 @@ const randomTexts = [
     "did you know? the eiffel tower was originally constructed upside down, but they flipped it over at the last minute because it looked better that way",
     "did you know? if you stare directly at the sun for 10 seconds, you'll gain the ability to see into the future, but only for things that have already happened",
     "did you know? sharks are afraid of rubber ducks and will swim away as soon as they see one",
-    "wisdom why are you selling my site"
+    "Wisdom is so sigma"
 ];
 
 // Function to generate a random number

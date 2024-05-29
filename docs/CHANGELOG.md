@@ -295,3 +295,11 @@ Just small changes and bug fixes, QOL, etc. I've hit the point at InfinityGamer 
 - Added new games: 0hh1, 0hn0, Burnin Rubber 5XS, Burnout Drift 3, Five Nights At Freddy's, and Little Alchemy
 - Made it so you can see what the fonts look like in settings, and made them and the themes dynamically generated, so it is easier to make new ones later
 - Removed some buttons from the game display navbar to give it more room for longer game names
+
+### v2.3.1 - Wisdom is sigma
+
+Changed splash text to say Wisdom is sigma
+
+5/29/24
+
+- Changed "wisdom why are you selling my site" text to "Wisdom is so sigma"
