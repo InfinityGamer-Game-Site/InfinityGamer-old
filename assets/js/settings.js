@@ -183,5 +183,14 @@ function createThemeButtons() {
 // Call the function to create theme buttons
 createThemeButtons();
 
+fetch('../package.json')
+    .then(response => response.json())
+    .then(data => {
+        // Get the version
+        const version = data.version;
+        document.getElementById("version").textContent = 'Current version: ' + version;
+    })
+    .catch(error => console.error('Error:', error));
+
 
 });

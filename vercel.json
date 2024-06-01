@@ -1,9 +1,19 @@
 {
-    "rewrites": [
-      {
-        "source": "/:path*",
-        "destination": "/404.html"
-      }
-    ]
-  }
-  
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/404.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=172800"
+        }
+      ]
+    }
+  ]
+}

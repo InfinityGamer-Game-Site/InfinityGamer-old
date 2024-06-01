@@ -2,7 +2,6 @@
     "workbench.colorTheme": "Default Dark Modern",
     "explorer.confirmPasteNative": false,
     "explorer.confirmDragAndDrop": false,
-    "chatgpt.lang": "en",
     "liveSassCompile.settings.formats": [
         {
             "format": "compressed",
@@ -13,5 +12,7 @@
     ],
     "liveSassCompile.settings.excludeList": [
         "/games/files/**",
-    ]
+    ],
+    "cSpell.enabled": true
+      
 }

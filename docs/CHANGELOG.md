@@ -213,7 +213,7 @@ Giant update, full of new games, CSS changes, game images, and more
 - Added info about the site on index.html
 - Switched to SCSS for themes
 - Minor code optimization and sorting changes
-- Made easter egg page coole
+- Made easter egg page cooler
 - Added 10 new themes and 2 new fonts
 - Added basic iframer
 - Made it so not all the fonts load, just the one selected
@@ -275,7 +275,7 @@ Added saving all saves as one file, and (hopefully) fixed caching old versions
 
 ### v2.2.2 - Removed unsafe games
 
-Removed games with security vulnerabilites
+Removed games with security vulnerabilities
 
 5/24/24
 
@@ -296,10 +296,21 @@ Just small changes and bug fixes, QOL, etc. I've hit the point at InfinityGamer 
 - Made it so you can see what the fonts look like in settings, and made them and the themes dynamically generated, so it is easier to make new ones later
 - Removed some buttons from the game display navbar to give it more room for longer game names
 
-### v2.3.1 - Wisdom is sigma
+### v2.3.1 - Old cache fixing
 
-Changed splash text to say Wisdom is sigma
+Made caches from more than two days ago be deleted
 
 5/29/24
 
+- Made caches from more than two days ago be deleted (when faulty cache code was last in)
 - Changed "wisdom why are you selling my site" text to "Wisdom is so sigma"
+
+### v2.3.2 - More small changes
+
+Small maintenance and cache fixing
+
+6/1/24
+
+- Shut down clock page temporarily for maintenance
+- Added updater page for people who have old cache
+- Typo fixes
