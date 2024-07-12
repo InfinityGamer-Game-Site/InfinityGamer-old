@@ -13,6 +13,6 @@
     "liveSassCompile.settings.excludeList": [
         "/games/files/**",
     ],
-    "cSpell.enabled": true
-      
+    "discord.detailsIdling": "Idle",
+    "discord.detailsEditing": "Editing {file_name} in {workspace}"
 }

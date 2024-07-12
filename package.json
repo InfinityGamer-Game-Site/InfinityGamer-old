@@ -1,7 +1,7 @@
 {
     "name": "infinitygamer",
-    "version": "2.3.1",
-    "description": "A game site with hundreds of games, an unblocked proxy viewer, and much more! Static for easy deployment anywhere!",
+    "version": "3",
+    "description": "A game site with hundreds of games, and much more! Static for easy deployment anywhere!",
     "author": "InfinityLoop",
     "license": "MIT",
     "repository": {

@@ -44,3 +44,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
         home.textContent = 'home';
     });
 });
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const stats = document.getElementById('stats-nav');
+    
+    stats.addEventListener('mouseover', () => {
+        stats.textContent = 'equalizer';
+    });
+
+    stats.addEventListener('mouseout', () => {
+        stats.textContent = 'bar_chart';
+    });
+});
+

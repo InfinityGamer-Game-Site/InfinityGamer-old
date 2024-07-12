@@ -1,44 +1,7 @@
-// JavaScript code to extract the search parameter from the URL and set the iframe source
-const urlParams = new URLSearchParams(window.location.search);
-const searchParam = urlParams.get("g");
-
 if (searchParam) {
   let title = toTitleCase(searchParam.replace(/-/g, " "));
-  document.getElementById("gameFrame").src = "files/" + searchParam + "/index.html";
   document.getElementById("gameName").textContent = title;
-  document.getElementById("fullscreenButton").href = "files/" + searchParam + "/index.html";
-  const savedTitle = localStorage.getItem("title");
-
-  if (savedTitle) {
-    document.title = savedTitle;
-  } else {
-    document.title = title + " - InfinityGamer";
-  }
-
-  if (fullscreenNeeded.includes(searchParam)){
-    const popup = document.createElement('pop-up');
-    popup.textContent = 'This game needs source view to work! Redirecting you...';
-    const goNowButton = document.createElement('button');
-    goNowButton.textContent = "Go now";
-    goNowButton.onclick = "window.location.href = files/" + searchParam + "/index.html"
-    document.body.appendChild(popup);
-    popup.appendChild(document.createElement('br'));
-    popup.appendChild(document.createElement('br'));
-    popup.appendChild(goNowButton);
-    setTimeout(function() {
-      window.location.href = "files/" + searchParam + "/index.html";
-  }, 5000);
-  }
 }
-
-function toTitleCase(str) {
-  return str.replace(/\b\w+/g, function (txt) {
-    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-  });
-}
-
-var iframe = document.getElementById('gameFrame');
-
 // Function to reload the iframe
 function reloadIframe() {
     iframe.contentWindow.location.reload(true); // Reload the iframe's content
@@ -60,3 +23,72 @@ navigator.clipboard.writeText(window.location.href)
 
 var shareButton = document.getElementById('shareButton');
 shareButton.addEventListener('click', shareGame);
+
+function fullscreen() {
+  redirect("fullscreen.html?g=" + searchParam);
+}
+
+function sourceView() {
+  const popup = document.createElement('pop-up');
+  popup.id = "sourcePopup";
+    popup.innerHTML = '<h2>Are you sure you want to enter source view?</h2><p>Play time will not be counted in source view.</p><p>Only use source view if the game isn&#39;t working, and won&#39;t work without it. Otherwise, use fullscreen mode.';
+    const goNowButton = document.createElement('a');
+    goNowButton.textContent = "Yes, I'm sure";
+    goNowButton.onclick = function() {
+        window.location.href = "source/" + searchParam + "/index.html"; 
+    };
+    goNowButton.style.fontSize = "50%";
+    goNowButton.style.textDecoration = "underline";
+    const noButton = document.createElement('button'); 
+    noButton.textContent = "No, never mind";
+    noButton.id = "noNVM";
+    noButton.onclick = function() {
+        document.getElementById("sourcePopup").remove();
+    };
+    const fullbtn = document.createElement('button'); 
+    fullbtn.textContent = "I want fullscreen";
+    fullbtn.id = "fullBTN";
+    fullbtn.onclick = function() {
+        redirect('fullscreen.html?g=' + searchParam);
+    };
+    document.body.appendChild(popup);
+    popup.appendChild(document.createElement('br'));
+    
+    popup.appendChild(noButton);
+    popup.appendChild(fullbtn);
+    popup.appendChild(document.createElement('br'));
+    popup.appendChild(goNowButton);
+}
+
+
+
+function formatDuration(seconds) {
+  if (seconds < 0) {
+      return "Invalid duration"; 
+  }
+
+  const days = Math.floor(seconds / (3600 * 24));
+  const hours = Math.floor((seconds % (3600 * 24)) / 3600);
+  const minutes = Math.floor((seconds % 3600) / 60);
+  const remainingSeconds = seconds % 60;
+
+  let formattedDuration = '';
+
+  if (days > 0) {
+      formattedDuration += `${days}:`;
+  }
+
+  if (hours > 0 || formattedDuration !== '') {
+      formattedDuration += `${hours.toString().padStart(2, '0')}:`;
+  }
+
+  formattedDuration += `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+
+  return formattedDuration;
+}
+
+function updatePlayTime() {
+  document.getElementById('playtime').textContent = 'Play time: ' + formatDuration(localStorage.getItem(searchParam + 'PlayTime'));
+}
+
+setInterval(updatePlayTime, 100);

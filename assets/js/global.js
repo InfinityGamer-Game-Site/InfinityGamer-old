@@ -103,3 +103,8 @@ function autoABE() {
 if (localStorage.getItem('autoAboutBlankEmbed') === 'true' && !(window.location.pathname === '/navbar.html') && window.top.location.href !== "about:blank") {
   autoABE();
 }
+function toTitleCase(str) {
+  return str.replace(/\b\w+/g, function (txt) {
+    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  });
+}

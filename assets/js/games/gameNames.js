@@ -390,16 +390,27 @@ const gameNames = [
   "zombs-royale"
 ];
 
+const sourceNeeded = [
+  "a-dark-room",
+  "cookie-clicker",
+  "incremancer"
+];
+
+
 const categories = {
   papas: [
-    "papas-pizzaria",
+    "papas-pizzeria",
     "papas-freezeria",
     "papas-hot-doggeria",
     "papas-pancakeria",
     "papas-sushiria",
     "papas-wingeria",
   ],
-  minecraft: ["minecraft-1.3", "minecraft-1.5.2", "minecraft-beta-0.30"],
+  minecraft: [
+      "minecraft-1.3",
+       "minecraft-1.5.2",
+        "minecraft-beta-0.30"
+      ],
   2048: [
     "1",
     "9007199254740992",
@@ -429,10 +440,31 @@ const categories = {
     "moto-x3m-spooky",
     "moto-x3m-winter",
   ],
+  puzzle: [
+      "0hh1",
+      "0hn0",
+      "1",
+    "9007199254740992",
+    "2048-multitask",
+    "2048",
+    "cupcake-2048",
+    "doge-2048",
+    "flappy-2048",
+    "meme-2048",
+  ],
+  shooter: [
+      "10-minutes-till-dawn",
+      "1v1lol"
+  ],
+  sports: [
+      "100-player-pong"
+  ],
+  platformer: [
+    "fullscreen-mario",
+    "mario",
+    "super-mario-63",
+    "super-mario-64",
+    "super-mario-maker-online",
+    "2020-game"
+  ]
 };
-
-const fullscreenNeeded = [
-  "a-dark-room",
-  "cookie-clicker",
-  "incremancer"
-];

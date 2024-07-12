@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/settings.css">
   </head>
   <body>
-    <iframe src="../navbar.html" frameborder="0" scrolling="no" width="100%" height="75px"></iframe>
+    <iframe src="../assets/navbar.html" frameborder="0" scrolling="no" width="100%" height="75px"></iframe>
     <h1>Settings</h1>
     
     <div class="setpar" id="cloak-div">
@@ -79,11 +79,13 @@
 <p>Save all game progress to one file for backup data if data is deleted.</p>
 <div class="cloak-container">
 <div class="left-cloak">
-  <p>Download file</p>
+  <h3>Download file</h3>
+  <p>Download save file. This will save everything, game saves, play time, theme, etc.</p>
     <button id="backupBtn">Download</button>
   </div>
   <div class="right-cloak">
-    <p>Restore from file</p>
+    <h3>Restore from file</h3>
+    <p>Restoring will not delete progress from games not played in save file.</p>
     <input type="file" id="restoreFileInput" style="display: none;">
     <button id="restoreBtn">Restore</button>
   </div>
@@ -91,6 +93,7 @@
 </div>
     <p id="version"></p>
     <button onclick="redirect('changelog.html')" style="height: 50px; width: 200px;">View Changelog</button>
+    <button onclick="redirect('devlog.html')" style="height: 50px; width: 200px;">View Devlog</button>
 
     <script src="../assets/js/global.js"></script>
     <script src="../assets/js/settings.js"></script>

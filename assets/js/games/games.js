@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   if (categoryParam) {
     categories[categoryParam].forEach(function (gameName) {
-      const gameImg = `../images/games/${gameName}.png`;
+      const gameImg = `../assets/images/games/${gameName}.png`;
       const gameLink = `display.html?g=${gameName}`;
 
       const gameBox = document.createElement("div");
@@ -141,3 +141,60 @@ let randomGame = gameNames[randomIndex];
   marginSwitch.addEventListener('change', toggleMargin);
 
 });
+
+function showCategories() {
+  // Create category container element
+  var categoryContainer = document.createElement('div');
+  categoryContainer.classList.add('category-container');
+
+  // Create category content element
+  var categoryContent = document.createElement('div');
+  categoryContent.classList.add('category-content');
+        categoryContent.innerHTML = '<div id="cat-wrapper"><category data-category="papas"></category><category data-category="minecraft"></category><category data-category="2048"></category><category data-category="mario"></category><category data-category="idle"></category><category data-category="cars"></category><category data-category="puzzle"></category><category data-category="shooter"></category><category data-category="sports"></category></div>';
+
+
+  // Create exit button element
+  var exitButton = document.createElement('button');
+  exitButton.classList.add('exit-button');
+  exitButton.innerHTML = 'X';
+
+  // Add event listener to exit button to close category when clicked
+  exitButton.addEventListener('click', function() {
+    categoryContainer.style.display = 'none';
+  });
+
+  // Append exit button to category content
+  categoryContent.appendChild(exitButton);
+
+  // Append category content to category container
+  categoryContainer.appendChild(categoryContent);
+
+  // Append category container to body
+  document.body.appendChild(categoryContainer);
+
+    const buttons = document.querySelectorAll('category');
+  
+    buttons.forEach(button => {
+        const category = button.dataset.category;
+        // Construct background image path based on category
+        const imagePath = `../assets/images/categories/${category}.png`;
+        // Set button background image
+        button.style.backgroundImage = `url('${imagePath}')`;
+        // Add onclick event listener to redirect when clicked
+        const catText = document.createElement("span");
+        catText.textContent = toTitleCase(category.replace(/-/g, " ")); // Convert to title case and replace dashes with spaces
+        button.appendChild(catText);
+        button.addEventListener('click', function() {
+            window.location.href = `index.html?c=${category}`;
+        });
+  });
+  
+}
+
+function toTitleCase(str) {
+  return str.replace(/\b\w+/g, function (txt) {
+    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  });
+}
+
+

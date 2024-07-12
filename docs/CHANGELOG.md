@@ -314,3 +314,25 @@ Small maintenance and cache fixing
 - Shut down clock page temporarily for maintenance
 - Added updater page for people who have old cache
 - Typo fixes
+
+### v3 - Game stats
+
+Added gameplay stats, and some small changes and bug fixes
+
+6/1/24 -  (Took break from 6/2 to 6/11 and 6/15 to 6/28 for summer vacation, and 6/30-7/9 because i kinda got bored of coding :O)
+
+- Added minor compression to images in games, game images, and easter egg images
+- Deleted Infinity directory in images
+- Added proper fullscreen
+- Made scrollbar styled
+- Added play time tracking and stats
+- Added source view warning
+- Updated package.json
+- Added more info about save file
+- Updated README.md
+- Replaced view counter with better one
+- Put view counter on games
+- Changed games/files to games/source
+- Added more games to categories
+- Updated cache delete to 30 days old, which will stay constant from now on
+- Updated the devlog

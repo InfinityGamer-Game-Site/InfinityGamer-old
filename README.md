@@ -1,13 +1,18 @@
 # InfinityGamer
 
+<img src="assets/images/logo.png" style="width: 300px; height: auto; float: right;">
+
 Infinite fun, unblocked!
-A new game site with over 350 games, many alternate links, and much more!
+A new game site with over 380 games, many alternate links, and much more!
+
 ![GitHub repo size](https://img.shields.io/github/repo-size/InfinityGamer-Game-Site/InfinityGamer)
 ![GitHub repo file or directory count (in path)](https://img.shields.io/github/directory-file-count/InfinityGamer-Game-Site/InfinityGamer/games%2Ffiles?type=dir&label=games)
 
 ## Deployment
 
 If you want to deploy this game site for an alt link, please remember that this is a VERY BIG repository. It will take some time to deploy.
+
+### Deploy Links
 
 [![Deploy to Heroku](https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg)](https://heroku.com/deploy/?template=https://github.com/InfinityGamer-Game-Site/InfinityGamer)
 [![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://replit.com/github/InfinityGamer-Game-Site/InfinityGamer)
@@ -24,7 +29,7 @@ If you want to deploy this game site for an alt link, please remember that this 
 
 ### Alternate Link Submission
 
-If you made one, thank you, you can submit it to me in the alternate links topic in Discussions, and it will be made into an official alt link, but it has to meet these requirements:
+If you deployed my site, thank you, you can submit it to me in the alternate links topic in Discussions, and it will be made into an official alt link, but it has to meet these requirements:
 
 - Index.html (homepage) cannot be a subdirectory (domain.com/subdirectory)
 - Can be a subdomain (subdomain.domain.com)

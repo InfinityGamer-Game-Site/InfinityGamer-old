@@ -1,5 +1,4 @@
 #gameFrame {
-    position: absolute;
     left: 0;
     width: 100%;
     height: calc(100vh - 60px);
@@ -11,29 +10,35 @@ pop-up {
     top: 25%;
     left: 25%;
     width: 50%;
-    height: 50%;
     background-color: var(--bg-color);
     outline: 2px outset var(--text-color);
     font-size: 150%;
+    padding: 10px;
 }
 
-nav {
-  margin-top: -10px;
+pop-up button {
+  width: 200px;
+  height: 75px;
 }
 
-nav ul {
+#noNVM, #fullBTN {
+  outline: 2px solid var(--text-color);
+}
+
+ul {
   list-style-type: none;
   margin: 0 -5px;
   padding: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-nav ul li {
+ul li {
   display: inline;
 }
 
-nav ul li a {
+ul li a {
   display: block;
   padding: 15px 20px;
   text-decoration: none;
@@ -41,7 +46,7 @@ nav ul li a {
   cursor: pointer;
 }
 
-nav ul li a:hover {
+ul li a:hover {
   background-color: var(--accent-color-1);
 }
 

@@ -1,0 +1,1 @@
+games/source/**/*.glsl filter=lfs diff=lfs merge=lfs -text
