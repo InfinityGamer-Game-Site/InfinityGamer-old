@@ -1,1 +1,7 @@
+games/source/**/*.html filter=lfs diff=lfs merge=lfs -text
+games/source/**/*.css filter=lfs diff=lfs merge=lfs -text
+games/source/**/*.js filter=lfs diff=lfs merge=lfs -text
+games/source/**/*.scss filter=lfs diff=lfs merge=lfs -text
+games/source/**/*.ts filter=lfs diff=lfs merge=lfs -text
+games/source/**/*.c filter=lfs diff=lfs merge=lfs -text
 games/source/**/*.glsl filter=lfs diff=lfs merge=lfs -text
