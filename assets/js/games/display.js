@@ -35,7 +35,7 @@ function sourceView() {
     const goNowButton = document.createElement('a');
     goNowButton.textContent = "Yes, I'm sure";
     goNowButton.onclick = function() {
-        window.location.href = "source/" + searchParam + "/index.html"; 
+        window.location.href = "files/" + searchParam + "/index.html"; 
     };
     goNowButton.style.fontSize = "50%";
     goNowButton.style.textDecoration = "underline";
