@@ -332,7 +332,6 @@ Added gameplay stats, and some small changes and bug fixes
 - Updated README.md
 - Replaced view counter with better one
 - Put view counter on games
-- Changed games/files to games/source
 - Added more games to categories
 - Updated cache delete to 30 days old, which will stay constant from now on
 - Updated the devlog
